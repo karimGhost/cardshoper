@@ -31,7 +31,7 @@ cart_button.innerText = order.cart_btn;
 
 
 const img = Box.querySelector('img');
-img.setAttribute('src', `image/${order.id}.png`);
+img.setAttribute('src', `${order.id}.png`);
 
 
 img.setAttribute('alt', order.title)

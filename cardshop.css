@@ -314,7 +314,7 @@ width: 100%;
 }
 
 header{
-     background-image: url("image/aqua.jpg");
+     background-image: url("aqua.jpg");
      filter: brightness(1.25);
 margin-top: -20px;
 
@@ -435,7 +435,7 @@ cursor: pointer;
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background-image: url("image/Abstract.jpg");
+  background-image: url("Abstract.jpg");
   border-radius: 5px;
   counter-increment: gallery-cel;
 }
@@ -455,7 +455,7 @@ cursor: pointer;
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background-image: url("image/creative.jpg");
+  background-image: url("creative.jpg");
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
@@ -474,7 +474,7 @@ cursor: pointer;
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background-image: url("image/mypicw.png");
+  background-image: url("mypicw.png");
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
@@ -492,7 +492,7 @@ cursor: pointer;
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background-image: url("image/aqua.jpg");
+  background-image: url("aqua.jpg");
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
@@ -510,7 +510,7 @@ cursor: pointer;
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background-image: url("image/creative.jpg");
+  background-image: url("creative.jpg");
   border-radius: 5px;
   counter-increment: gallery-cell;
 }

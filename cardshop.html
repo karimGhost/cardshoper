@@ -11,22 +11,22 @@
 <link rel="stylesheet" href="cardshop.css"/>
 <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 
-    <title>Document</title>
+    <title>cardshop</title>
 </head>
 <body>
 <header>
 
 <div class="img-container">
-    <img  class="image" src="t/mypicw.png" width="200" />
+    <img  class="image" src="image/mypicw.png" width="200" />
 </div>
 
 <div class="box">
 
     <ul class="box-ul">
         <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
-        <li class="f"><a class="  link" href=""><i class="fon fa fa-home"><p class="font">Home</p></i></a></li>
-        <li class="f"><a class="link" href=""><i class=" fon fa fa-info-circle"><p class="font">About</p></i></a></li>
-        <li class="f"><a class="link" href=""><i class="fon 	fa fa-square-o"><p class="font">Cards</p></i></a></li>
+        <li class="f"><a class="  link" href="cardshop.html"><i class="fon fa fa-home"><p class="font">Home</p></i></a></li>
+        <li class="f"><a class="link" href="/"><i class=" fon fa fa-info-circle"><p class="font">About</p></i></a></li>
+        <li class="f"><a class="link" href="#card"><i class="fon 	fa fa-square-o"><p class="font">Cards</p></i></a></li>
         
     </ul>
 
@@ -38,7 +38,7 @@
         <div class="container-nav">
 <div class="con"> 
         <div class="search-nav">
-            <form action="/" style=" position: relative">
+            <form class="form" action="/" style=" position: relative">
             <input class="input" style="position: relative; outline: none; " type="text" placeholder="search Cards" id="search"/>
             <button class="button" style="background-color:transparent; position:absolute; right: 0px; outline:0; border:none;z-index: 1;cursor: pointer;"  class ="suit"><i class="fa fa-search" aria-hidden="true"></i></button>
   
@@ -57,18 +57,18 @@
          <div class="item-1 ">
             
 <div class="drop">
-            <li><button class="acc" ><i id="ad" class="faa fa fa-user" onclick="drop()"><p class="p"> Account</p></i></button></li>
+            <li><button class="acc" ><i id="ad" class="faa fa fa-user"  onclick="drop()"><p class="p"> Account</p></i></button></li>
     
     <div stle="position: absolute; bottom: -90px;" class="dropdown ">
 
-  <a class="dro" href ="/"> Login </a>
+  <a class="dro"  onclick="closeIt()"> Login </a>
     <p class="dro">or</p>
-       <a class="dro" href ="/"> signup</a>
+       <a class="dro" href ="signup.html"> signup</a>
 
     </div>
           </div>
 
-          <li><button class="acc" ><i id="ad" class="faa fa fa-shopping-cart" onclick="drop()"><p class="p"> Cart</p></i></button></li>
+          <li><button class="acc" ><i id="ad" class="faa fa fa-shopping-cart" onclick="dro()"><p class="p"> Cart</p></i></button></li>
                    
            <!--     <li><a href=""><span class="fa-li lu"><i id="ad" class="fa fa-user"></i></span><p class='dis'style="display: none">My Account</p></a></li>
                
@@ -99,14 +99,49 @@
     <div class="carousel-cell5"></div>
   </div>
 
+<!--- start of login-->
 
+  <div class="contain" >
+
+
+    <div class="fo1 animation" id="open">
+        <a href="javascript:void(0)"   class="top" style="font-size:40px;padding:4px" onclick="cacel()">&times;</a>
+
+    <form action="/" >
+
+
+<div class="logon">
+<label for="userName">Username</label>
+<input type="text" placeholder="username" name="username"    id="userName" required/>
+<label for ="password">Password</label>
+<input type="password" placeholder="password"  id="password" required/>
+<button class="log" data-submit="login" >Login</button> 
+
+</div>
+<div class="login">
+<button class="forgot">Forgot password</button> 
+<button class="sign"><a href="signup.html">Signup</a></button>
+
+<span class="cancel"  onclick="cacel()">cancel</span>
+</div>
+    </form>
+
+
+    </div>
+
+</div>
+
+
+
+
+<!----    end of login-->
 
   <div class="container">
   
   
     <div class="border box1 bo"  data-box="card11">
       <p class='disp' style="display:none"> about this </p>
-      <img src="t/card11.png" width="100%" height="70%" alt="XBOX card">
+      <img src="image/card11.png" width="100%" height="70%" alt="XBOX card">
     
       <div class="box_card">
         <div class="item_detail"> XBOX GiftCard</div>
@@ -115,7 +150,7 @@
 
 <div style="display: none;">
   <p class="cart_text">XBOX card is the best  </p>
-  <button class="cart_button">add to cart</button>
+  <button class="cart_button">proceed to checkout</button>
   </div>
   
 <div onmouseover="mouseO()"  class="circle border">
@@ -130,7 +165,7 @@
     <div class="box2 bo" data-box="card2">
       
       <p class='disp' style="display:none"> about this </p>
-      <img class="border" src="card2.png" width="100%" height="70%" alt="no card">
+      <img class="border" src="image/card2.png" width="100%" height="70%" alt="no card">
       
       
      <div class="box_card">
@@ -140,7 +175,7 @@
  
   <div style="display: none;">
     <p class="cart_text">itunes card is the best  </p>
-    <button class="cart_button">add to cart</button>
+    <button class="cart_button">proceed to checkout</button>
     </div>
 
   <div onmouseover="mouseO1()"  class="cir circle"   id="click">  
@@ -153,7 +188,7 @@
     <div class="box3 bo" data-box="card3">
       
        <p class='disp' style="display:none"> about this </p>
-       <img class="border" src="card3.jpg" width="100%" height="70%" alt="no card">
+       <img class="border" src="image/card3.png" width="100%" height="70%" alt="no card">
       
       
       <div class="box_card">
@@ -162,8 +197,8 @@
     </div>
 
     <div style="display: none;">
-      <p class="cart_text">amazon card is the best  </p>
-      <button class="cart_button">add to cart</button>
+      <p class="cart_text">amazon card</p>
+      <button class="cart_button">proceed to checkout</button>
       </div>
 
     <div onmouseover="mouseO2()"  class="ci2 circle"> 
@@ -176,17 +211,17 @@
       <div class="box4 bo" data-box="card4">
       
        <p class='disp' style="display:none"> about this </p>
-       <img class="border" src="card4.png" width="100%" height="70%" alt="no card">
+       <img class="border" src="image/card4.png" width="100%" height="70%" alt="no card">
       
 
       <div class="box_card">
-        <div class="item_detail"> Steam GiftCard</div>
+        <div class="item_detail" id="card"> Steam GiftCard</div>
         <div class="item_price">0$ - 0$</div>
     </div>
 
     <div style="display: none;">
-      <p class="cart_text">Steam card is the best  </p>
-      <button class="cart_button">add to cart</button>
+      <p class="cart_text">Steam card   </p>
+      <button class="cart_button">proceed to checkout</button>
       </div>
 
     <div onmouseover="mouseO3()" onmouseout="mouseF3()"  class="ci3 circle"> 
@@ -198,7 +233,7 @@
     <div class="box5 bo" data-box="card5">
       
         <p class='disp' style="display:none"> about this </p>
-        <img class="border "  src="card5.png" width="100%" height="70%" alt="no card">
+        <img class="border "  src="image/card5.png" width="100%" height="70%" alt="no card">
        
         <div class="box_card">
           <div class="item_detail"> Nintendo GiftCard</div>
@@ -206,8 +241,8 @@
       </div>
   
       <div style="display: none;">
-        <p class="cart_text">Nintendo card is the best  </p>
-        <button class="cart_button">add to cart</button>
+        <p class="cart_text">Nintendo card </p>
+        <button class="cart_button">proceed to checkout</button>
         </div>
 
       <div onmouseover="mouseO4()" onmouseout="mouseF4()"  class="circle ci4"> 
@@ -219,15 +254,15 @@
      <div class="box6 bo" data-box="card6">
       
         <p class='disp' style="display:none"> about this </p>
-        <img class="border "  src="card6.png" width="100%" height="70%" alt="no card">
+        <img class="border "  src="image/card6.png" width="100%" height="70%" alt="no card">
        <div class="box_card">
                 <div class="item_detail"> ebay GiftCard</div>
          <div class="item_price">0$ - 0$</div>
 </div>
 
 <div style="display: none;">
-  <p class="cart_text">ebay card is the best  </p>
-  <button class="cart_button">add to cart</button>
+  <p class="cart_text">ebay card </p>
+  <button class="cart_button">proceed to checkout</button>
   </div>
         
         <div onmouseover="mouseO5()" onmouseout="mouseF5()" class="circle ci5">
@@ -265,6 +300,7 @@
     
     <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
     <script src="card.js"></script>
+    <script src="login.js"></script>
 
     <script>
 
@@ -350,6 +386,11 @@ document.querySelector('.box3').style.transition="1.5s";
 document.querySelector('.box3').style.border = "2px solid aqua";
 }
 
+function dro(){
+  const url = window.location.href.replace('cardshop.html', 'cards.html');
+
+    window.location.href = url
+}
 
 function mouseO3(){
 

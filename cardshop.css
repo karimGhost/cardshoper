@@ -18,8 +18,60 @@ height: auto;
 main{
   background-image: url("image/walpa.jpg");
 
+padding-bottom: 2px;
+
+}
+
+.clss{
+  animation: 3s down ;
+  position: relative;
+  animation-fill-mode: both;
+-webkit-animation:down 3s ;
+-webkit-animation-fill-mode: both;
+}
+
+.dow{
+  animation: dow 3s ;
+}
+
+@keyframes dow {
+  from{
+  
+    transform: rotate(20deg);
+  }
+  to{
+    transform:scale(1.3) ;
+  }
+}
+
+@-webkit-keyframes down{
+from{
+  top: 0px;
+  -webkit-transform: scale(0);
+
+}
+to{
+  top: 200px;
+  -webkit-transform: translateY();
+  -webkit-transform: scale(1);
+}
 
 
+}
+
+
+@keyframes down {
+  from{
+    top: 0px;
+    transform: scale(1,2);
+  }
+  
+  to{
+    top: 200px;
+    transform:translateY();
+  }
+
+  
 }
 
 /*////*/
@@ -49,12 +101,13 @@ padding-bottom: 20px;
 @-webkit-keyframes animated{
 
    from{-webkit-transform: scale(0)};
-   to{-webkit-transform: scale(1)};
+   to{-webkit-transform: scale(2); z-index: auto
+  };
 }
 @keyframes animated {
 
    from{ transform: scale(0)};
-   to{transform: scale(1)};
+   to{transform: scale(2); z-index: auto };
    
 }
 
@@ -388,8 +441,16 @@ border: 2px solid rgb(7, 211, 150);
 }
 
 .circle:before{
-  border: 2px solid rgb(3, 180, 56);
-border-radius: 50%;
+  
+
+  border-color: #7c7c7c;
+
+  background: linear-gradient(top, rgba(38, 38, 38, 0.8), #e6e6e6 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, rgba(38, 38, 38, 0.8));
+  background: -webkit-linear-gradient(top, rgba(38, 38, 38, 0.5), #e6e6e6 25%, #ffffff 38%, rgba(0, 0, 0, 0.25)  63%, #e6e6e6 87%, rgba(38, 38, 38, 0.4));
+
+
+  border-radius: 50%;
+  box-shadow: 1px 1px 8px silver;
   content: '';
 text-align: center;
   color: whitesmoke;
@@ -1251,7 +1312,7 @@ height: 330px;
   height: 11%;
   border-radius: 50%;
  
-  background-color: rgb(73, 211, 211);
+  background-color: #e0e5ec;
   position: absolute;
   top:-20px;
   right: 40%;
@@ -1304,7 +1365,7 @@ height: 330px;
 @media screen and (min-width: 768px) {
   
   .footer-right{
-    background-color: rgb(6, 247, 235);
+    background-color: #24edfc;
     height: 150px;
     width: 40%;
     float: right;
@@ -1316,7 +1377,7 @@ height: 330px;
     height: 150px;
     width: 50%;
     float: left;
-      background-color: rgb(15, 221, 125);
+      background-color: rgb(9, 10, 10);
     }
 
   .circle{
@@ -1324,7 +1385,7 @@ height: 330px;
     height:13%;
     border-radius: 50%;
    
-    background-color: rgb(185, 2, 231);
+    background-color: #e0e5ec;
     position: absolute;
     top:-20px;
     right: 70px;
@@ -1438,12 +1499,14 @@ margin-top: 20px;
     height:14%;
     border-radius: 50%;
    
-    background-color: rgb(236, 112, 11);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top:-30px;
     right: 110px;
     left: 110px
   }
+
+
 
   .line{
     margin-bottom: -20px;
@@ -1638,7 +1701,7 @@ height: fit-content;
     height:15%;
     border-radius: 50%;
    
-    background-color: rgb(48, 23, 105);
+    background-color: #e0e5ec;
     position: absolute;
     top:-10px;
     right: 40px;
@@ -1655,7 +1718,7 @@ height: fit-content;
   }
   .circle{
     margin-top: 20px;
-    background-color: blue;
+    background-color: #e0e5ec;
   }
 
 }
@@ -1670,7 +1733,7 @@ height: fit-content;
   }
   .circle{
    top: -20px;
-    background-color: rgb(3, 232, 248);
+    background-color: #e0e5ec;
   margin-left: -10px;
  left: 50px
   }

@@ -17,7 +17,7 @@
 <header>
 
 <div class="img-container">
-    <img  class="image" src="image/mypicw.png" width="200" />
+  <a href="/">  <img  class="image" src="image/mypicw.png" width="200" /></a>
 </div>
 
 <div class="box">
@@ -150,10 +150,10 @@
 
 <div style="display: none;">
   <p class="cart_text">XBOX card is the best  </p>
-  <button class="cart_button">add to cart</button>
+  <button class="cart_button">proceed to checkout</button>
   </div>
   
-<div onmouseover="mouseO()"  class="circle border">
+<div onmouseover="mouseO()"  class=" circle border">
         <div class="line order"></div>
          <div class="click"></div>
       </div>
@@ -175,7 +175,7 @@
  
   <div style="display: none;">
     <p class="cart_text">itunes card is the best  </p>
-    <button class="cart_button">add to cart</button>
+    <button class="cart_button">proceed to checkout</button>
     </div>
 
   <div onmouseover="mouseO1()"  class="cir circle"   id="click">  
@@ -197,12 +197,12 @@
     </div>
 
     <div style="display: none;">
-      <p class="cart_text">amazon card is the best  </p>
-      <button class="cart_button">add to cart</button>
+      <p class="cart_text">amazon card</p>
+      <button class=" li2 cart_button">proceed to checkout</button>
       </div>
 
     <div onmouseover="mouseO2()"  class="ci2 circle"> 
-        <div class="li li2"></div>
+        <div></div>
          <div></div>
       </div>
     </div>
@@ -220,8 +220,8 @@
     </div>
 
     <div style="display: none;">
-      <p class="cart_text">Steam card is the best  </p>
-      <button class="cart_button">add to cart</button>
+      <p class="cart_text">Steam card   </p>
+      <button class="li3 cart_button">proceed to checkout</button>
       </div>
 
     <div onmouseover="mouseO3()" onmouseout="mouseF3()"  class="ci3 circle"> 
@@ -233,7 +233,7 @@
     <div class="box5 bo" data-box="card5">
       
         <p class='disp' style="display:none"> about this </p>
-        <img class="border "  src="image/card5.png" width="100%" height="70%" alt="no card">
+        <img class="border size"  src="image/card5.png" width="90%" height="70%" alt="no card">
        
         <div class="box_card">
           <div class="item_detail"> Nintendo GiftCard</div>
@@ -241,12 +241,12 @@
       </div>
   
       <div style="display: none;">
-        <p class="cart_text">Nintendo card is the best  </p>
-        <button class="cart_button">add to cart</button>
+        <p class="cart_text">Nintendo card </p>
+        <button class="li4 cart_button">proceed to checkout</button>
         </div>
 
       <div onmouseover="mouseO4()" onmouseout="mouseF4()"  class="circle ci4"> 
-         <div class="li li4"></div>
+         <div></div>
           <div></div>
        </div>
      </div>
@@ -254,19 +254,19 @@
      <div class="box6 bo" data-box="card6">
       
         <p class='disp' style="display:none"> about this </p>
-        <img class="border "  src="image/card6.png" width="100%" height="70%" alt="no card">
+        <img class="border size1"  src="image/card6.png" width="100%" height="70%" alt="no card">
        <div class="box_card">
                 <div class="item_detail"> ebay GiftCard</div>
          <div class="item_price">0$ - 0$</div>
 </div>
 
 <div style="display: none;">
-  <p class="cart_text">ebay card is the best  </p>
-  <button class="cart_button">add to cart</button>
+  <p class="cart_text">ebay card </p>
+  <button class= "li5 cart_button">proceed to checkout</button>
   </div>
         
         <div onmouseover="mouseO5()" onmouseout="mouseF5()" class="circle ci5">
-        <div class="li li5"></div>
+        
           <div></div>
        </div>
      </div>
@@ -299,14 +299,15 @@
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     
     <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
-    <script src="card.js"></script>
-    <script src="login.js"></script>
+    <script async src="card.js"></script>
+    <script async src="login.js"></script>
 
-    <script>
+    <script async>
 
         function openNav(){
           document.querySelector(".box-ul").style.width = "200px";
 
+          document.querySelector(".box-ul").style.zIndex = "3";
 
 const mediaquery = window.matchMedia('(min-width: 768px)')
 
@@ -318,8 +319,8 @@ document.querySelector(".dropdown").style.transition = '3s'
 
 document.querySelector(".box-ul").style.border= "2px solid rgb(109, 235, 36)";
 document.querySelector(".carousel").style.zIndex = "-2";
-document.querySelector(".box1").style.zIndex = "-2";
-document.querySelector(".box2").style.zIndex = "-2";
+document.querySelector(".box1").style.zIndex = "1";
+document.querySelector(".box2").style.zIndex = "2";
 document.querySelector(".box-ul").style.zIndex = "2";
 
 document.querySelector(".open").style.display = "none";
@@ -369,20 +370,20 @@ document.querySelector(".box2").style.zIndex = "2";
         function mouseO1(){
 
 document.querySelector('.cir').style.border= "2px solid aqua";
-document.querySelector('.cir').style.transition="1.5s";
+document.querySelector('.cir').style.transition="1.3s";
 document.querySelector('.li0').style.border= "2px solid aqua";
-document.querySelector('.li0').style.transition="1.3s";
-document.querySelector('.box2').style.transition="1.5s";
+document.querySelector('.li0').style.transition="1.1s";
+document.querySelector('.box2').style.transition="1.3s";
 document.querySelector('.box2').style.border = "2px solid aqua";
 }
 
 function mouseO2(){
 
 document.querySelector('.ci2').style.border= "2px solid aqua";
-document.querySelector('.ci2').style.transition="1.5s";
+document.querySelector('.ci2').style.transition="1.3s";
 document.querySelector('.li2').style.border= "2px solid aqua";
-document.querySelector('.li2').style.transition="1.3s";
-document.querySelector('.box3').style.transition="1.5s";
+document.querySelector('.li2').style.transition="1.1s";
+document.querySelector('.box3').style.transition="1.3s";
 document.querySelector('.box3').style.border = "2px solid aqua";
 }
 
@@ -395,10 +396,10 @@ function dro(){
 function mouseO3(){
 
 document.querySelector('.ci3').style.border= "2px solid aqua";
-document.querySelector('.ci3').style.transition="1.5s";
+document.querySelector('.ci3').style.transition="1.3s";
 document.querySelector('.li3').style.border= "2px solid aqua";
-document.querySelector('.li3').style.transition="1.3s";
-document.querySelector('.box4').style.transition="1.5s";
+document.querySelector('.li3').style.transition="1.1s";
+document.querySelector('.box4').style.transition="1.3s";
 document.querySelector('.box4').style.border = "2px solid aqua";
 }
 
@@ -406,20 +407,20 @@ document.querySelector('.box4').style.border = "2px solid aqua";
 function mouseO4(){
 
 document.querySelector('.ci4').style.border= "2px solid aqua";
-document.querySelector('.ci4').style.transition="1.5s";
+document.querySelector('.ci4').style.transition="1.3s";
 document.querySelector('.li4').style.border= "2px solid aqua";
-document.querySelector('.li4').style.transition="1.3s";
-document.querySelector('.box5').style.transition="1.5s";
+document.querySelector('.li4').style.transition="1.1s";
+document.querySelector('.box5').style.transition="1.3s";
 document.querySelector('.box5').style.border = "2px solid aqua";
 }
 
 function mouseO5(){
 
 document.querySelector('.ci5').style.border= "2px solid aqua";
-document.querySelector('.ci5').style.transition="1.5s";
+document.querySelector('.ci5').style.transition="1.3s";
 document.querySelector('.li5').style.border= "2px solid aqua";
-document.querySelector('.li5').style.transition="1.3s";
-document.querySelector('.box6').style.transition="1.5s";
+document.querySelector('.li5').style.transition="1.1s";
+document.querySelector('.box6').style.transition="1.3s";
 document.querySelector('.box6').style.border = "2px solid aqua";
 }
 

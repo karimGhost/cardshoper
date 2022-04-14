@@ -24,9 +24,9 @@
 
     <ul class="box-ul">
         <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
-        <li class="f"><a class="  link" href="cardshop.html"><i class="fon fa fa-home"><p class="font">Home</p></i></a></li>
-        <li class="f"><a class="link" href="/"><i class=" fon fa fa-info-circle"><p class="font">About</p></i></a></li>
-        <li class="f"><a class="link" href="#card"><i class="fon 	fa fa-square-o"><p class="font">Cards</p></i></a></li>
+        <li  onmouseover="on()"  onmouseout="off()" class="f"><a class="link" href="cardshop.html"><i class="fon fon1 fa fa-home"><p class="font font1">Home</p></i></a></li>
+        <li  onmouseover="on2()"  onmouseout="off2()"  class="f"><a class="link" href="/"><i class=" fon fon2 fa fa-info-circle"><p class="font font2">About</p></i></a></li>
+        <li onmouseover="on3()"   onmouseout="off3()" class="f"><a class="link" href="#card"><i class="fon fon3 	fa fa-square-o"><p class="font  font3">Cards</p></i></a></li>
         
     </ul>
 
@@ -271,11 +271,66 @@
        </div>
      </div>
      
-    </div>
+    
+
+
+    <div class="box7 bo" data-box="card7">
+      
+      <p class='disp' style="display:none"> about this </p>
+      <img class="border size1"  src="image/card6.png" width="100%" height="70%" alt="no card">
+     <div class="box_card">
+              <div class="item_detail"> ebay GiftCard</div>
+       <div class="item_price">0$ - 0$</div>
+</div>
+
+<div style="display: none;">
+<p class="cart_text">ebay card </p>
+<button class= "li6 cart_button">proceed to checkout</button>
+</div>
+      
+      <div onmouseover="mouseO6()" onmouseout="mouseF6()" class="circle ci6">
+      
+        <div></div>
+     </div>
+   </div>
+
+
+
+   <div class="box8 bo" data-box="card8">
+      
+    <p class='disp' style="display:none"> about this </p>
+    <img class="border size1"  src="image/card6.png" width="100%" height="70%" alt="no card">
+   <div class="box_card">
+            <div class="item_detail"> ebay GiftCard</div>
+     <div class="item_price">0$ - 0$</div>
+</div>
+
+<div style="display: none;">
+<p class="cart_text">ebay card </p>
+<button class= "li7 cart_button">proceed to checkout</button>
+</div>
+    
+    <div onmouseover="mouseO7()" onmouseout="mouseF7()" class="circle ci7">
+    
+      <div></div>
+   </div>
+ </div>
+
+
+
+
+
+  </div>
+
+
+
+
    
 <div class="nbtn">
-    <button>prev</button>
-    <button>next</button>
+<input  class= "bt btn-left" type="button"  value="prev"> 
+<a class="num" href="/">1</a>
+<a class="num" href="/">2</a>
+<input  class= "bt btn-right" type ="button" value="next">
     </div>
     </main>
 
@@ -288,6 +343,8 @@
 </div>
 
 <div class="footer-left">
+  
+    <a href="/">  <img  class="image img" src="image/mypicw.png" width="200" /></a>
 
 
 </div>
@@ -425,6 +482,100 @@ document.querySelector('.box6').style.border = "2px solid aqua";
 }
 
 
+function mouseO6(){
+
+document.querySelector('.ci6').style.border= "2px solid aqua";
+document.querySelector('.ci6').style.transition="1.3s";
+document.querySelector('.li6').style.border= "2px solid aqua";
+document.querySelector('.li6').style.transition="1.1s";
+document.querySelector('.box7').style.transition="1.3s";
+document.querySelector('.box7').style.border = "2px solid aqua";
+}
+
+
+
+function mouseO7(){
+
+document.querySelector('.ci7').style.border= "2px solid aqua";
+document.querySelector('.ci7').style.transition="1.3s";
+document.querySelector('.li7').style.border= "2px solid aqua";
+document.querySelector('.li7').style.transition="1.1s";
+document.querySelector('.box8').style.transition="1.3s";
+document.querySelector('.box8').style.border = "2px solid aqua";
+}
+
+
+function mouseO8(){
+
+document.querySelector('.ci8').style.border= "2px solid aqua";
+document.querySelector('.ci8').style.transition="1.3s";
+document.querySelector('.li8').style.border= "2px solid aqua";
+document.querySelector('.li8').style.transition="1.1s";
+document.querySelector('.box9').style.transition="1.3s";
+document.querySelector('.box9').style.border = "2px solid aqua";
+}
+
+
+function mouseO9(){
+
+document.querySelector('.ci9').style.border= "2px solid aqua";
+document.querySelector('.ci9').style.transition="1.3s";
+document.querySelector('.li9').style.border= "2px solid aqua";
+document.querySelector('.li9').style.transition="1.1s";
+document.querySelector('.box10').style.transition="1.3s";
+document.querySelector('.box10').style.border = "2px solid aqua";
+}
+
+
+
+
+
+document.querySelector('.font1').style.color ='#b0f7fd';
+
+document.querySelector('.fon1').style.color ='#b0f7fd';
+
+
+function on(){
+ 
+document.querySelector('.font1').style.color  = 'black' ;
+document.querySelector('.fon1').style.color  = 'black' ;
+
+
+
+
+}
+
+function off(){
+  document.querySelector('.font1').style.color = '#b0f7fd';
+  document.querySelector('.fon1').style.color  ='#b0f7fd'; 
+
+}
+
+
+function on2(){
+  document.querySelector('.font2').style.color  = 'black'; 
+document.querySelector('.fon2').style.color  = 'rgba(0,0,0, 0.5)' ;
+
+}
+function off2(){
+  document.querySelector('.font2').style.color = 'aqua';
+  document.querySelector('.fon2').style.color  = 'aqua'; 
+
+}
+
+
+
+function on3(){
+  document.querySelector('.font3').style.color  = 'black' ;
+document.querySelector('.fon3').style.color  ='rgba(0,0,0, 0.5)' ;
+
+}
+
+function off3(){
+  document.querySelector('.font3').style.color = 'aqua';
+  document.querySelector('.fon3').style.color  = 'aqua' 
+
+}
 
         $( window ).scroll(function() {
   // If user didn't scroll 1200px set default z-index

@@ -54,6 +54,39 @@ confirm("do you add this to the cart ") ? localStorage.setItem('orderbtn',JSON.s
 
 });
    
- 
+ function next(){
+
+    let hr = window.location.href.split('/');
+  
+    let page = hr[0].replace('/', '');
+  
+    let nxt = pages.indexOf(page) + 1;
+  
+    if(nxt > pages.length) nxt = 0;
+  
+  
+    let rdr = hr[nxt] + '' + pages[nxt];
+  
+    window.location.href = rdr;
+  }
+  
+function prev(){
+
+
+    let hr = window.location.href.split('/');
+    
+    let page = hr[1].replace('/', '');
+    
+    let nxt = pages.indexOf(page) - 1;
+    
+    if(nxt < 0) nxt = pages.length - 1;
+    
+    
+    let rdr = hr[0] + '' + pages[nxt];
+    
+    window.location.href = rdr;
+    }
+
+
 
 

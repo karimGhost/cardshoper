@@ -56,7 +56,7 @@ confirm("do you add this to the cart ") ? localStorage.setItem('orderbtn',JSON.s
    
  function next(){
 
-    let hr = window.location.href.split('/');
+    let hr = window.location.href.split('card');
   
     let page = hr[0].replace('/', '');
   

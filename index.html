@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    
     <script src="https://kit.fontawesome.com/2a168f2e2d.js" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css"></link>
 
@@ -14,16 +21,32 @@
     <title>cardshop</title>
 </head>
 <body>
+  
+
 <header>
 
+  <ul class="ull">
+    <li  class="lis"><a class="lis active" style="cursor: pointer"; href="cardshop.html">home</a></li>
+    <li class="lis"><a class="lis" href="#bo">cards</a></li>
+    <li class="lis"><a class="lis" href="/">about</a></li>
+  </ul>
+  
+
 <div onclick="prev()" class="img-container">
-  <a href= "/">   <img   class="image" src="image/mypicw.png" width="200" /></a>
+  <a href= "/">   <img   class="image image-head" src="mypicw.png" width="200" /></a>
 </div>
 
+
+
+
+
 <div class="box">
+ 
+  <a href="javascript:void(0)" class="bod" onclick="closeNav()">&times;</a>
 
     <ul class="box-ul" style="margin-left:-8px">
-        <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+  <!--<a href="javascript:void(0)" class="close absolute" onclick="closeNav()">&times;</a> -->
+
         <li  onmouseover="on()"  onmouseout="off()" class="f"><a class="link" href="cardshop.html"><i class="fon fon1 fa fa-home"><p class="font font1">Home</p></i></a></li>
         <li  onmouseover="on2()"  onmouseout="off2()"  class="f"><a class="link" href="/"><i class=" fon fon2 fa fa-info-circle"><p class="font font2">About</p></i></a></li>
         <li onmouseover="on3()"   onmouseout="off3()" class="f"><a class="link" href="#card"><i class="fon fon3 	fa fa-square-o"><p class="font  font3">Cards</p></i></a></li>
@@ -31,6 +54,8 @@
     </ul>
 
 <span class="open" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776</span>
+<a href="javascript:void(0)" id="clos" class="clos" onclick="closeNav()">&times;</a>
+
 </div>
 
     <nav>
@@ -66,21 +91,21 @@
 <div class="navbar-aside">
            
         
-         <div class="item-1 ">
+         <div class="item-1">
             
 <div class="drop">
-            <li><button class="acc" ><i id="ad" class="faa fa fa-user"  onclick="drop()" onmouseover="drope()" onmouseout="dropdown()"><p class="p"  > Account</p></i></button></li>
+            <li><button class="acc" ><i id="ad" class="faa fa fa-user"   onmouseover="drope()" onmouseout="dropdown()"><p class="p"  > Account</p></i></button></li>
     
-    <div stle="position: absolute; bottom: -90px;" class="dropdown ">
+    <div stle="position: absolute; bottom: -90px;" class="dropdown" onmouseover="drope()" onmouseout="dropdown()">
 
   <a class="dro"  onclick="closeIt()"> Login </a>
     <p class="dro">or</p>
-       <a class="dro" href ="signup.html"> signup</a>
+       <a class="dro"   href ="signup.html"> signup</a>
 
     </div>
           </div>
 
-          <li><button class="acc" ><i id="ad" class="faa fa fa-shopping-cart" onclick="dro()"><p class="p"> Cart</p></i></button></li>
+          <li><button class="acc bt2" ><i id="ad" class="faa  fa fa-shopping-cart" onclick="dro()"><p class="p"> Cart</p></i></button></li>
                    
            <!--     <li><a href=""><span class="fa-li lu"><i id="ad" class="fa fa-user"></i></span><p class='dis'style="display: none">My Account</p></a></li>
                
@@ -101,7 +126,10 @@
 
 
 
-<main class="carouse">
+ <main class="carouse">
+  
+ 
+
 <!-- Flickity HTML init -->
 <div class="carousel" data-flickity='{ "autoPlay": true }'>
     <div class="carousel-cell1"></div>
@@ -111,9 +139,11 @@
     <div class="carousel-cell5"></div>
   </div>
 
+
+
 <!--- start of login-->
 
-  <div class="contain" >
+  <div class="contain">
 
 
     <div class="fo1 animation" id="open">
@@ -153,7 +183,7 @@
   
     <div class="border box1 bo"  data-box="card11">
       <p class='disp' style="display:none"> about this </p>
-      <img src="image/card11.png" width="100%" height="70%" alt="XBOX card">
+      <img src="card11.png" width="100%" height="70%" alt="XBOX card">
     
       <div class="box_card">
         <div class="item_detail"> XBOX GiftCard</div>
@@ -177,7 +207,7 @@
     <div class="box2 bo" data-box="card2">
       
       <p class='disp' style="display:none"> about this </p>
-      <img class="border" src="image/card2.png" width="100%" height="70%" alt="no card">
+      <img class="border" src="card2.png" width="100%" height="70%" alt="no card">
       
       
      <div class="box_card">
@@ -200,7 +230,7 @@
     <div class="box3 bo" data-box="card3">
       
        <p class='disp' style="display:none"> about this </p>
-       <img class="border" src="image/card3.png" width="100%" height="70%" alt="no card">
+       <img class="border" src="card3.png" width="100%" height="70%" alt="no card">
       
       
       <div class="box_card">
@@ -223,7 +253,7 @@
       <div class="box4 bo" data-box="card4">
       
        <p class='disp' style="display:none"> about this </p>
-       <img class="border" src="image/card4.png" width="100%" height="70%" alt="no card">
+       <img class="border" src="card4.png" width="100%" height="70%" alt="no card">
       
 
       <div class="box_card">
@@ -242,10 +272,10 @@
       </div>
     </div>
 
-    <div class="box5 bo" data-box="card5">
+    <div class="box5 bo" id="bo" data-box="card5">
       
         <p class='disp' style="display:none"> about this </p>
-        <img class="border size"  src="image/card5.png" width="90%" height="70%" alt="no card">
+        <img class="border size"  src="card5.png" width="90%" height="70%" alt="no card">
        
         <div class="box_card">
           <div class="item_detail"> Nintendo GiftCard</div>
@@ -268,7 +298,7 @@
     <div class="box6 bo" data-box="card6">
       
       <p class='disp' style="display:none"> about this </p>
-      <img class="border size1"  src="image/card6.png" width="100%" height="70%" alt="no card">
+      <img class="border size1"  src="card6.png" width="100%" height="70%" alt="no card">
      <div class="box_card">
               <div class="item_detail"> ebay GiftCard</div>
        <div class="item_price">0$ - 0$</div>
@@ -290,7 +320,7 @@
    <div class="box7 bo" data-box="card7">
       
     <p class='disp' style="display:none"> about this </p>
-    <img class="border size1"  src="image/card7.png" width="100%" height="70%" alt="no card">
+    <img class="border size1"  src="card7.png" width="100%" height="70%" alt="no card">
    <div class="box_card">
             <div class="item_detail"> PlayStation GiftCard</div>
      <div class="item_price">0$ - 0$</div>
@@ -312,7 +342,7 @@
  <div class="box8 bo" data-box="card8">
       
   <p class='disp' style="display:none"> about this </p>
-  <img class="border size1"  src="image/card08.png" width="100%" height="70%" alt="no card">
+  <img class="border size1"  src="card08.png" width="100%" height="70%" alt="no card">
  <div class="box_card">
           <div class="item_detail"> GooglePlay GiftCard</div>
    <div class="item_price">0$ - 0$</div>
@@ -343,6 +373,8 @@
 <a class="num" href="cardshop2.html">2</a>
 <input   onclick="next()" class= "bt btn-right" type ="button" id ="next" value="next &raquo;">
     </div>
+
+ 
     </main>
 
   
@@ -355,17 +387,17 @@
 <div><a  class="location" href="location:https://www.google.com/maps"> <i class="fa fa1 fa-map-marker"></i>  current location</a></div>
  <div class="mobi"> <a class="num" href="tel:0123456789"><i class="fa fa2 fa-mobile"> </i>  0123456789</a> </div>
 
-  <span><a class="twitter" href="twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></span>
-<span><a class="insta" href="instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></span>
+  <span><a class="" href="twitter.com" target="_blank"><i class="fa twitter fa-twitter"></i></a></span>
+<span><a class="" href="instagram.com" target="_blank"><i class="fa insta fa-instagram"></i></a></span>
 
-<span><a class="quora" href="quora.com" target="_blank"><i class="fa fa-quora"></i></a></span>
+<span><a class="" href="quora.com" target="_blank"><i class="fa quora fa-quora"></i></a></span>
 
-<div style = " color: #7c7c7c; " > <p>&copy made by: <a  class="git" href="github.io"><b>karim</b></a></p>   </div>
+<div style = " color: #7c7c7c; margin-top: -10px;"><p> &copy 2022 <br> made by: <a  class="git" href="github.io"><b>karim</b></a></p>   </div>
 
 </div>
 <div class="footer-left">
   
-    <a href="#">  <img  class="image img" src="image/mypicw.png" width="200" /></a>
+    <a href="#">  <img  class="image img img-left" src="mypicw.png" width="200" /></a>
 </div>
 
 </footer>
@@ -380,17 +412,30 @@
 
     <script async>
 
+
         function openNav(){
           document.querySelector(".box-ul").style.width = "200px";
        
           document.querySelector(".box-ul").style.zIndex = "3";
           
 document.querySelector('.carouse').style.zIndex = "-1";
-const mediaquery = window.matchMedia('(min-width: 768px)')
+
+//
+
+document.querySelector(".bod").style.backgroundColor = "white";
+document.querySelector(".bod").style.opacity = "0.7";
+
+document.querySelector(".bod").style.height = "330vh";
+
+
+document.querySelector(".clos").style.display = "block";
+
+
+const mediaquery = window.matchMedia('(min-width: 768px)');
 
 if(mediaquery.matches){
   document.querySelector(".box-ul").style.width = "500px";
-document.querySelector(".dropdown").style.transition = '3s'
+document.querySelector(".dropdown").style.transition = '3s';
 }
  
 
@@ -402,15 +447,37 @@ document.querySelector(".box-ul").style.zIndex = "2";
 
 document.querySelector(".open").style.display = "none";
 
-document.querySelector(".img-container").style.marginTop= "-40px";
+//document.querySelector(".img-container").style.marginTop= "-40px";
 
 document.querySelector("buton").style.display = "none";
-       
+
+
 }
+
+
+
+/*
+
+let ope = document.querySelector(".box-ul");
+
+if(ope.style.width === "500px"){
+    function closeN(){
+  document.querySelector(".box-ul").style.width = "0px";
+}
+ }
+
+Window.addEventListener("click", function(e){
+
+e =   document.querySelector(".box-ul").style.width = "0px";
+
+ 
+  }) */
+
 
 
         function closeNav(){
 
+          
             document.querySelector(".box-ul").style.width = "0";
             document.querySelector(".box-ul").style.border= "none";
 
@@ -419,6 +486,15 @@ document.querySelector("buton").style.display = "none";
 document.querySelector(".box1").style.zIndex = "2";
 document.querySelector(".box2").style.zIndex = "2";
 document.querySelector('.carouse').style.zIndex = "1";
+
+document.querySelector(".clos").style.display = "none";
+
+
+
+document.querySelector(".bod").style.backgroundColor = "";
+document.querySelector(".bod").style.opacity = "";
+document.querySelector(".bod").style.height = "0px";
+
 
 
         }
@@ -600,6 +676,28 @@ function off3(){
 }
 
 
+let pages = ["cardshop.html","cardshop2.html","cards.html"];
+
+
+
+
+function next(){
+        let hr = window.location.href.split('/$').pop();
+
+        let page = hr[0].replace("/", '');
+        
+       let h = pages.indexOf(page) + 1;
+
+if(h == pages.length) h = 0 ;
+
+
+       let rdr = pages[1].replace(pages[0])
+
+       window.location.href = rdr
+    }
+    
+
+
 
 function prev(){
   
@@ -669,13 +767,37 @@ f.style.backgroundColor = "black";
 
 
 function drope(){
-  document.querySelector(".carouse").style.zIndex = "-1"
-  document.querySelector(".dropdown").style.zIndex = "2"
+  document.querySelector(".carouse").style.zIndex = "-1";
+  document.querySelector(".dropdown").style.zIndex = "2";
+  document.querySelector(".dro").style.zIndex = "2";
+
+  document.querySelector(".ull").style.zIndex = "-1";
+
+
+  document.querySelector(".enabled").style.zIndex = "-1";
 
 }
 
+
+
+
+function drop(){
+  document.querySelector(".carouse").style.zIndex = "-1";
+  document.querySelector(".dropdown").style.zIndex = "2";
+  document.querySelector(".dro").style.zIndex = "2";
+
+  document.querySelector(".ull").style.zIndex = "-1";
+
+
+  document.querySelector(".enabled").style.zIndex = "-1";
+}
+
 function dropdown(){
-  document.querySelector(".carouse").style.zIndex = "1"
+  document.querySelector(".carouse").style.zIndex = "1";
+  document.querySelector(".ull").style.zIndex = "3";
+
+  document.querySelector(".enabled").style.zIndex = "1";
+
 
 }
 

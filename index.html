@@ -676,7 +676,7 @@ function off3(){
 }
 
 
-let pages = ["cardshop2.html", " "];
+let pages = ["cardshop2.html", "cardshoper"];
 
 
 
@@ -684,7 +684,7 @@ let pages = ["cardshop2.html", " "];
 function next(){
         let hr = window.location.href.split('/$').pop();
 
-        let page = hr[0].replace("/", '');
+        let page = hr[0].replace("", 'cardshoper/');
         
        let h = pages.indexOf(page) + 1;
 

@@ -676,7 +676,7 @@ document.querySelector('.fon3').style.color  = 'aqua'
 }
 
 
-let pages = [" ","cardshop2.html"];
+let pages = ["carshoper","cardshop2.html"];
 
 
 
@@ -684,7 +684,7 @@ let pages = [" ","cardshop2.html"];
 function prev(){
       let hr = window.location.href.split('/$').pop();
 
-      let page = hr[0].replace("/", '');
+      let page = hr[0].replace(" ", '');
       
      let h = pages.indexOf(page) + 1;
 

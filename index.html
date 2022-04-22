@@ -682,9 +682,9 @@ let pages = ["cardshop2.html", "cardshoper"];
 
 
 function next(){
-        let hr = window.location.href.split('/$').pop();
+        let hr = window.location.href.split('/$');
 
-        let page = hr[0].replace("", 'cardshoper/');
+        let page = hr[0].replace("", '/');
         
        let h = pages.indexOf(page) + 1;
 
@@ -699,23 +699,6 @@ if(h == pages.length) h = 0 ;
 
 
 
-function prev(){
-  
-let h = window.location.href.split('/');
-
-
-let page = h.replace("/", "");
-
-let hr = pages.indexOf(page) -1;
-
-if(hr >= pages.length) hr -1;
-
-
-let rdr = page[hr]  - page[hr];
-
-window.location.href = rdr
-
-}
 
 
 

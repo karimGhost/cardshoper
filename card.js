@@ -54,7 +54,7 @@ confirm("do you add this to the cart ") ? localStorage.setItem('orderbtn',JSON.s
 
 });
    
- function next(){
+/* function next(){
 
     let hr = window.location.href.split('ca');
   
@@ -88,5 +88,5 @@ function prev(){
     }
 
 
-
+*/
 

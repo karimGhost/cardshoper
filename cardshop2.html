@@ -691,7 +691,7 @@ function prev(){
 
       let page = hr[0].replace("/", '');
       
-     let h = pages.indexOf(page) - 1;
+     let h = pages.indexOf(page);
 
 if(h >= pages.length) h = 0 ;
 
@@ -700,7 +700,22 @@ if(h >= pages.length) h = 0 ;
 
      window.location.href = rdr
   }
-  
+        
+  function prev(){
+        let hr = window.location.href.split('/$').pop();
+
+        let page = hr[0].replace("/", ' ');
+        
+       let h = pages.indexOf(page) - 1;
+
+if(h == pages.length) h = 0 ;
+
+
+
+       window.location.href = h - 1;
+    }
+    
+
 
   
 

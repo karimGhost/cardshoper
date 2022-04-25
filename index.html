@@ -689,6 +689,31 @@ function off3(){
   document.querySelector('.fon3').style.color  = 'aqua' 
 
 }
+        
+        
+        
+        let pages = ["cards.html"];
+
+
+
+
+
+
+
+function card(){
+      let hr = window.location.href.split('/$').pop();
+
+      let page = hr[0].replace("/", ' ');
+      
+     let h = pages.indexOf(page) + 1;
+
+if(h == pages.length) h = 0 ;
+
+
+     let rdr = pages[1].replace(pages[0])
+
+     window.location.href = rdr
+  }
 
 
 let pages = ["cardshop.html","cardshop2.html","cards.html"];

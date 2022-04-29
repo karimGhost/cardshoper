@@ -32,7 +32,7 @@
 
   <ul class="ull">
     <li  class="lis"><a class="lis active" style="cursor: pointer"; href="cardshop.html">home</a></li>
-    <li class="lis"><a class="lis" href="#bo" onclick: "card()">cards</a></li>
+    <li class="lis"><a class="lis" href="#bo">cards</a></li>
     <li class="lis"><a class="lis" href="/">about</a></li>
   </ul>
   
@@ -110,7 +110,7 @@
     </div>
           </div>
 
-          <li><a href ="cards.html"> <button class="acc bt2" onclick = "cart()" ><i id="ad" class="faa  fa fa-shopping-cart" onclick="dro()"> <p class="p">Cart</a></p></i></button></li>
+          <li><button class="acc bt2" ><i id="ad" class="faa  fa fa-shopping-cart" onclick="dro()"><p class="p"> Cart</p></i></button></li>
                    
            <!--     <li><a href=""><span class="fa-li lu"><i id="ad" class="fa fa-user"></i></span><p class='dis'style="display: none">My Account</p></a></li>
                
@@ -193,79 +193,128 @@
   <div class="container">
   
   
-    <div class="border box1 bo"  data-box="card11">
-      <p class='disp' style="display:none"> about this </p>
-      <img src="card11.png" width="100%" height="70%" alt="XBOX card">
+    <div class="border box9 bo"  >
+      <p class='disp'  style="display:none"> about this </p>
+      <img  class="border" src="card11.png" width="100%" height="70%" alt="XBOX card">
     
 
 
       <div class="box_card">
         <div class="item_detail"> XBOX GiftCard</div>
-        <div class="item_price">0$ - 0$</div>
-</div>
+      
+ <span class="flex" >
+   
+
+    <input class="cash" type ="radio" name="price" value="10$" checked id="check1"/>
+          <input class="cash" type ="radio" value="20$" name="price" id="check2"/>
+          <input class="cash" type ="radio" value="40$"  name="price"id="check3"/>
+          <input class="cash" type ="radio" value="100$" name="price" id="check4"/>
+          
+          <label class="label" for="check1">10$</label>
+          <label class="label" for="check2">20$</label>
+          <label class="label" for="check3">40$</label>
+          <label class="label" for="check4">100$</label>
+  
+   </span>
+      </div>
+
+
+
 
 <div style="display: none;">
   <p class="cart_text">XBOX card is the best  </p>
-  <button class="cart_button">proceed to checkout</button>
+  <button class=" li8 cart_button">proceed to checkout</button>
   </div>
   
-<div onmouseover="mouseO()"  class=" circle border">
-        <div class="line order"></div>
-         <div class="click"></div>
+<div onmouseover="mouse08()"   class="circle ci8 border">
+        <div class=" order"></div>
+         <div ></div>
       </div>
-      </div>
-    
+
+      <button class="gift" style="cursor: pointer;" data-box="card09" onclick="check()">buy</button>
+
+    </div>
 
 
      
-    <div class="box2 bo" data-box="card2">
+    <div class="box10 bo">
       
       <p class='disp' style="display:none"> about this </p>
       <img class="border" src="card2.png" width="100%" height="70%" alt="no card">
       
-      
+
      <div class="box_card">
+
           <div class="item_detail">iTunes GiftCard</div>
-          <div class="item_price"> 0$ - 0$</div>
-  </div>
+          <span class="flex">
+            <input class="cash " type ="radio" name="pric" value="10$" id="check1_2"/>
+            <input class="cash " type ="radio" name="pric"value="20$" checked id="check2_2"/>
+            <input class="cash " type ="radio"name="pric" value="40$" id="check3_2"/>
+            <input class="cash " type ="radio" name="pric" value="100$" id="check4_2"/>
+            
+            <label class="label" for="check1_2">10$</label>
+            <label class="label" for="check2_2">20$</label>
+            <label class="label" for="check3_2">40$</label>
+            <label class="label" for="check4_2">100$</label>
+
+   </span>
+          </div>
  
   <div style="display: none;">
     <p class="cart_text">itunes card is the best  </p>
-    <button class="cart_button">proceed to checkout</button>
+    <button class="li9 cart_button">proceed to checkout</button>
     </div>
 
-  <div onmouseover="mouseO1()"  class="cir circle"   id="click">  
-        <div class="li li0"></div>
-        <div class="click"></div>
+  <div onmouseover="mouseO9()"  class="ci9 circle"   id="click">  
+        <div></div>
+        <div></div>
       </div>
+
+
+      <button class="gift" style="cursor: pointer;" data-box="card2">buy</button>
+
       </div>
       
      
     
-    <div class="box3 bo" data-box="card3">
+    <div class="box11 bo">
       
        <p class='disp' style="display:none"> about this </p>
        <img class="border" src="card3.png" width="100%" height="70%" alt="no card">
       
       
       <div class="box_card">
+        
         <div class="item_detail">amazon GiftCard</div>
-            <div class="item_price">0$ - 0$</div>
+       <span class="flex">
+          <input class="cash" type ="radio" name="price2" value="10$" id="check1_3" checked/>
+          <input class="cash" type ="radio" name="price2" value="20$" id="check2_3"/>
+          <input class="cash" type ="radio"name="price2" value="40$" checked id="check3_3"/>
+          <input class="cash" type ="radio" name="price2"value="100$" id="check4_3"/>
+          
+          <label class="label" for="check1_3">10$</label>
+          <label class="label" for="check2_3">20$</label>
+          <label class="label" for="check3_3">40$</label>
+          <label class="label" for="check4_3">100$</label>
+         
+ </span>
     </div>
 
     <div style="display: none;">
       <p class="cart_text">amazon card</p>
-      <button class=" li2 cart_button">proceed to checkout</button>
+      <button class=" li10 cart_button">proceed to checkout</button>
       </div>
 
-    <div onmouseover="mouseO2()"  class="ci2 circle"> 
+    <div onmouseover="mouse10()"  class="ci10 circle"> 
         <div></div>
          <div></div>
       </div>
+      <button class="gift" style="cursor: pointer;" data-box="card11">buy</button>
+
     </div>
       
       
-      <div class="box4 bo" data-box="card4">
+      <div class="box12 bo" >
       
        <p class='disp' style="display:none"> about this </p>
        <img class="border" src="card4.png" width="100%" height="70%" alt="no card">
@@ -273,105 +322,164 @@
 
       <div class="box_card">
         <div class="item_detail" id="card"> Steam GiftCard</div>
-        <div class="item_price">0$ - 0$</div>
+        <span class="flex">
+          <input class="cash" type ="radio" name="price2" value="10$" id="check1_4" checked/>
+          <input class="cash" type ="radio" name="price2" value="20$" checked id="check2_4"/>
+          <input class="cash" type ="radio"name="price2" value="40$" id="check3_4"/>
+          <input class="cash" type ="radio" name="price2"value="100$" id="check4_4"/>
+          <label class="label" for="check1_4">10$</label>
+          <label class="label" for="check2_4">20$</label>
+          <label class="label" for="check3_4">40$</label>
+          <label class="label" for="check4_4">100$</label>
+ </span>
     </div>
 
     <div style="display: none;">
       <p class="cart_text">Steam card   </p>
-      <button class="li3 cart_button">proceed to checkout</button>
+      <button class="li11 cart_button">proceed to checkout</button>
       </div>
 
-    <div onmouseover="mouseO3()" onmouseout="mouseF3()"  class="ci3 circle"> 
-        <div class="li li3"></div>
+    <div onmouseover="mouse11()" onmouseout="mouseF11()"  class="ci11 circle"> 
+        <div></div>
          <div></div>
       </div>
+      <button class="gift" style="cursor: pointer;" data-box="card11">buy</button>
+
     </div>
 
-    <div class="box5 bo" id="bo" data-box="card5">
+    <div class="box13 bo" id="bo" data-box="card13">
       
         <p class='disp' style="display:none"> about this </p>
         <img class="border size"  src="card5.png" width="90%" height="70%" alt="no card">
        
         <div class="box_card">
           <div class="item_detail"> Nintendo GiftCard</div>
-          <div class="item_price">0$ - 0$</div>
+          <span class="flex">
+            <input class="cash" type ="radio" name="price2" value="10$" id="check1_5" checked/>
+            <input class="cash" type ="radio" name="price2" value="20$" id="check2_5"/>
+            <input class="cash" type ="radio"name="price2" value="40$" id="check3_5"/>
+            <input class="cash" type ="radio" name="price2"value="100$" checked id="check4_5"/>
+
+            <label class="label" for="check1_5">10$</label>
+            <label class="label" for="check2_5">20$</label>
+            <label class="label" for="check3_">40$</label>
+            <label class="label" for="check4_5">100$</label>
+   </span>
       </div>
   
       <div style="display: none;">
         <p class="cart_text">Nintendo card </p>
-        <button class="li4 cart_button">proceed to checkout</button>
+        <button class="li12 cart_button">proceed to checkout</button>
         </div>
 
-      <div onmouseover="mouseO4()" onmouseout="mouseF4()"  class="circle ci4"> 
+      <div onmouseover="mouse12()" onmouseout="mouseF12()"  class="circle ci12"> 
          <div></div>
           <div></div>
        </div>
+       <button class="gift" style="cursor: pointer;" data-box="card11">buy</button>
+
      </div>
     
 
 
-    <div class="box6 bo" data-box="card6">
+    <div class="box14 bo" data-box="card14">
       
       <p class='disp' style="display:none"> about this </p>
-      <img class="border size1"  src="card6.png" width="100%" height="70%" alt="no card">
+      <img  class="border"  src="card6.png" width="100%" height="70%" alt="no card">
      <div class="box_card">
               <div class="item_detail"> ebay GiftCard</div>
-       <div class="item_price">0$ - 0$</div>
+              <span class="flex">
+                <input class="cash" type ="radio" name="price2" value="10$" id="check1_6" checked/>
+          <input class="cash" type ="radio" name="price2" value="20$" id="check2_6"/>
+          <input class="cash" type ="radio"name="price2" value="40$" checked id="check3_6"/>
+          <input class="cash" type ="radio" name="price2"value="100$" id="check4_6"/>
+
+                <label class="label" for="check1_6">10$</label>
+                <label class="label" for="check2_6">20$</label>
+                <label class="label" for="check3_6">40$</label>
+                <label class="label" for="check4_6">100$</label>
+       </span>
 </div>
 
 <div style="display: none;">
 <p class="cart_text">ebay card </p>
-<button class= "li6 cart_button">proceed to checkout</button>
+<button  class= "li13 cart_button">proceed to checkout</button>
 </div>
       
-      <div onmouseover="mouseO6()" onmouseout="mouseF6()" class="circle ci6">
+      <div onmouseover="mouse13()" onmouseout="mouseF13()" class="ci13 circle">
       
         <div></div>
      </div>
+     <button class="gift" style="cursor: pointer;" data-box="card11">buy</button>
+
    </div>
 
 
 
-   <div class="box7 bo" data-box="card7">
+   <div class="box15 bo" data-box="card15">
       
     <p class='disp' style="display:none"> about this </p>
     <img class="border size1"  src="card7.png" width="100%" height="70%" alt="no card">
    <div class="box_card">
             <div class="item_detail"> PlayStation GiftCard</div>
-     <div class="item_price">0$ - 0$</div>
+            <span class="flex">
+              <input class="cash" type ="radio" name="price2" value="10$" checked id="check1_7" checked/>
+              <input class="cash" type ="radio" name="price2" value="20$" id="check2_7"/>
+              <input class="cash" type ="radio"name="price2" value="40$" id="check3_7"/>
+              <input class="cash" type ="radio" name="price2"value="100$" id="check4_7"/>
+              
+              <label class="label" for="check1_7">10$</label>
+              <label class="label" for="check2_7">20$</label>
+              <label class="label" for="check3_7">40$</label>
+              <label class="label" for="check4_7">100$</label>
+     </span>
 </div>
 
 <div style="display: none;">
 <p class="cart_text">PlayStation GiftCard </p>
-<button class= "li7 cart_button">proceed to checkout</button>
+<button class="gift li14 cart_button">proceed to checkout</button>
 </div>
     
-    <div onmouseover="mouseO7()" onmouseout="mouseF7()" class="circle ci7">
+    <div onmouseover="mouse14()" onmouseout="mouseF14()" class="ci14 circle ">
     
       <div></div>
    </div>
+   <button class="gift" style="cursor: pointer;" data-box="card11">buy</button>
+
  </div>
 
 
 
- <div class="box8 bo" data-box="card8">
+ <div class="box16  bo" data-box="card16">
       
   <p class='disp' style="display:none"> about this </p>
   <img class="border size1"  src="card08.png" width="100%" height="70%" alt="no card">
  <div class="box_card">
           <div class="item_detail"> GooglePlay GiftCard</div>
-   <div class="item_price">0$ - 0$</div>
+          <span class="flex">
+            <input class="cash" type ="radio" name="price2"  value="10$" id="check1_8" checked/>
+            <input class="cash" type ="radio" name="price2" value="20$" id="check2_8"/>
+            <input class="cash" type ="radio"name="price2" checked value="40$" id="check3_8"/>
+            <input class="cash" type ="radio" name="price2"value="100$" id="check4_8"/>
+
+            <label class="label" for="check1_8">10$</label>
+            <label class="label" for="check2_8">20$</label>
+            <label class="label" for="check3_8">40$</label>
+            <label class="label" for="check4_8">100$</label>
+   </span>
 </div>
 
 <div style="display: none;">
 <p class="cart_text">GooglePlay GiftCard</p>
-<button class= "li6 cart_button">proceed to checkout</button>
+<button  class="gift li15 cart_button">proceed to checkout</button>
 </div>
   
-  <div onmouseover="mouseO6()" onmouseout="mouseF6()" class="circle ci6">
+  <div onmouseover="mouse15()" onmouseout="mouseF15()" class="ci15 circle ">
   
     <div></div>
  </div>
+ <button class="gift" style="cursor: pointer;" data-box="card11">buy</button>
+
 </div>
 
 
@@ -381,12 +489,15 @@
 
 
 
+
+
+
    
-<div class="nbtn">
-<input  onclick="prev()"  class= "bt btn-left" type="button" class="back"  id="prev" value="&laquo; prev"> 
-<a class="num" style="background-color: white;color: black;" href="">1</a>
-<a class="num" href="cardshop2.html">2</a>
-<input   onclick="next()" class= "bt btn-right" type ="button" id ="next" class="next" value="next &raquo;">
+<div class="nbtn"  >
+<input  onclick="prev()"  class= "bt btn-left" type="button"  id="prev" value="&laquo; prev"> 
+<a class="num"  href="cardshop.html">1</a>
+<a class="num" style="background-color: white; color: black;" href="cardshop2.html">2</a>
+<input   onclick="next()" class= "bt btn-right" type ="button" id ="next" disabled value="next &raquo;">
     </div>
 
  
@@ -396,26 +507,27 @@
 
 <footer class="footer">
 
-<div class="footer-right">
+  <div class="footer-right">
 
 
-<div><a  class="location" onclick="google()" target="_blank" href=""> <i class="fa fa1 fa-map-marker"></i>  current location</a></div>
- <div class="mobi"> <a class="num" href="tel:0123456789"><i class="fa fa2 fa-mobile"> </i>  0123456789</a> </div>
-
-  <span><a  target="_blank"  href="twitter.com" onclick="twitter()"><i class="fa twitter fa-twitter"></i></a></span>
-<span  onclick="insta()"><a  style="cursor: pointer;" target="_blank" onclick="insta()"><i  onclick="insta()" class="fa insta fa-instagram"></i></a></span>
-
-<span><a class="" href="quora.com" target="_blank" onclick="quora()"><i class="fa quora fa-quora"></i></a></span>
-
-<div style = " color: #7c7c7c; margin-top: -10px;"><p> &copy 2022 <br> made by: <a  onclick="git()" target="_blank" class="git" href=""><b>karim</b></a></p>   </div>
-
-</div>
+    <div><a  class="location" onclick="google()" target="_blank" href=""> <i class="fa fa1 fa-map-marker"></i>  current location</a></div>
+     <div class="mobi"> <a class="num" href="tel:0123456789"><i class="fa fa2 fa-mobile"> </i>  0123456789</a> </div>
+    
+      <span><a  target="_blank"  href="twitter.com" onclick="twitter()"><i class="fa twitter fa-twitter"></i></a></span>
+    <span  onclick="insta()"><a  style="cursor: pointer;" target="_blank" onclick="insta()"><i  onclick="insta()" class="fa insta fa-instagram"></i></a></span>
+    
+    <span><a class="" href="quora.com" target="_blank" onclick="quora()"><i class="fa quora fa-quora"></i></a></span>
+    
+    <div style = " color: #7c7c7c; margin-top: -10px;"><p> &copy 2022 <br> made by: <a  onclick="git()" target="_blank" class="git" href=""><b>karim</b></a></p>   </div>
+    
+    </div>
 <div class="footer-left">
   
     <a href="cardshop.html">  <img  class="image img img-left" src="mypicw.png" width="200" /></a>
 </div>
 
 </footer>
+
 
 
     

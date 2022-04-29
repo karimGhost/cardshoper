@@ -198,10 +198,24 @@ px;
 @keyframes dow {
   from{
   
-    transform: rotate(20deg);
+
+    transform:scale(1);
+    transform: rotate(-70deg);
+
   }
+  50%{
+   
+    transform:scale(1.2);
+
+    transform: rotate(-70);
+    
+  }
+
   to{
-    transform:scale(1.3) ;
+   
+    transform: rotate(-70deg);
+
+    transform:scale(1.3);
   }
 }
 
@@ -639,7 +653,7 @@ border: 2px solid rgb(7, 211, 150);
 .click{
   text-align: center;
   margin-top: 15px;
-  color: red
+ color: red;
 }
 
 
@@ -1656,7 +1670,7 @@ width: 44%;
 height: 330px;
 }
 
-.line{
+/*.line{
   width: 20%;
   background-color:red;
   height: 100px;
@@ -1665,7 +1679,7 @@ height: 330px;
   z-index: -1;
   top: -5px;
 }
-
+*/
 .footer-right{
   background-color: rgb(6, 247, 215);
   height: 230px;
@@ -1804,6 +1818,74 @@ height: 330px;
 }
 
 .box12{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+.box13{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+.box14{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+.box15{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+
+.box16{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+
+.box17{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+
+.box18{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+.box19{
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  
+  height: 250px;
+  
+}
+
+
+.box20{
   position: relative;
   background-color: rgb(252, 252, 252);
   
@@ -1967,9 +2049,75 @@ margin-top: 20px;
     height: 250px;
     
   }
-
+  .box13{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
   
-  .box1,.box2, .box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12{
+  .box14{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box15{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box16{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box17{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box18{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box19{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box20{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box1,.box2, .box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17,.box18,.box19,.box20{
     border-radius: 5;
   }
 
@@ -2107,7 +2255,91 @@ margin-top: 20px;
     
   }
 
-  .box1,.box2, .box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
+
+  .box11{
+position: relative;
+background-color: rgb(252,252,252) ;
+
+height: 250px;
+  }
+
+.box12{
+
+position: relative;
+background-color: rgb(252,252,252);
+height: 250px;
+
+}
+
+  .box13{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box14{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box15{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box16{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box17{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box18{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box19{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box20{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+
+  .box1,.box2, .box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17,.box18,.box19,.box20{
     border-radius: 5px;
   }
 
@@ -2259,7 +2491,79 @@ header{
     
   }
 
+  .box12{
+    position: relative;
+    background-color: rgb(252,252,252);
+    height: 250px;
+  }
 
+  .box13{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box14{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box15{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box16{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box17{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box18{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  .box19{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
+  
+  
+  .box20{
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    
+    height: 250px;
+    
+  }
  
  /*.box1,.box2, .box3,.box4,.circle,.line{
 
@@ -2412,7 +2716,7 @@ top: 40px
   margin-left: -40px;
 }
   .box_card{
-    margin-top: -50px;
+   /* margin-top: -50px; */
     padding: 10px;
   }
   .acc{
@@ -2421,6 +2725,9 @@ top: 40px
 
   }
 
+  .border{
+    height: 50%;
+  }
   
   
 
@@ -3231,3 +3538,281 @@ border-radius: 5px;
   }
 }
 
+/*tr,th,td{
+  border: 2px solid black;
+width: 50%;
+
+}
+*/
+
+tr{
+  border: 2px solid black;
+  width: 50%;
+}
+
+
+th{
+  border: 2px solid black;
+  width: 50%;
+}
+
+
+
+td{
+  height: fit-content;
+  width: fit-content;
+}
+
+
+
+.tab{
+  position: absolute;
+  top: 50px;
+margin-left: 20%;
+margin-right: 20% ;
+left:0;
+right: 0;
+
+  width: 50%;
+  background-color: #fc2490;
+}
+
+
+.item-images{
+  width: 30px;
+  height: 300px;
+  border: 2px solid black;
+  width: 50%;
+}
+
+.item_detail{
+  height: fit-content;
+}
+
+
+.cash{
+  display: none;
+}
+
+.label{
+  border: 1px solid gainsboro;
+  margin: 20px 5px 0 5px;
+  
+
+  cursor: pointer;
+  align-items: center;
+  display: inline-block;
+
+}
+
+.item_detail{
+  margin-top: -1px;
+}
+
+.flex{
+  display: flex;
+  margin-top: -10px;
+  justify-content: center;
+box-sizing: content-box;
+width: fit-content;
+height: fit-content;
+}
+.cash{
+  display: none;
+}
+
+#check1:checked ~ label[for="check1"],
+#check2:checked ~ label[for="check2"],
+#check3:checked ~ label[for="check3"],
+#check4:checked ~ label[for="check4"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+ 
+#check1_2:checked ~ label[for="check1_2"],
+#check2_2:checked ~ label[for="check2_2"],
+#check3_2:checked ~ label[for="check3_2"],
+#check4_2:checked ~ label[for="check4_2"]{
+  background: #999;
+
+color: rgb(6, 243, 69);
+
+}
+#check1_3:checked ~ label[for="check1_3"],
+#check2_3:checked ~ label[for="check2_3"],
+#check3_3:checked ~ label[for="check3_3"],
+#check4_3:checked ~ label[for="check4_3"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_4:checked ~ label[for="check1_4"],
+#check2_4:checked ~ label[for="check2_4"],
+#check3_4:checked ~ label[for="check3_4"],
+#check4_4:checked ~ label[for="check4_4"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_5:checked ~ label[for="check1_5"],
+#check2_5:checked ~ label[for="check2_5"],
+#check3_5:checked ~ label[for="check3_5"],
+#check4_5:checked ~ label[for="check4_5"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_6:checked ~ label[for="check1_6"],
+#check2_6:checked ~ label[for="check2_6"],
+#check3_6:checked ~ label[for="check3_6"],
+#check4_6:checked ~ label[for="check4_6"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_7:checked ~ label[for="check1_7"],
+#check2_7:checked ~ label[for="check2_7"],
+#check3_7:checked ~ label[for="check3_7"],
+#check4_7:checked ~ label[for="check4_7"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_8:checked ~ label[for="check1_8"],
+#check2_8:checked ~ label[for="check2_8"],
+#check3_8:checked ~ label[for="check3_8"],
+#check4_8:checked ~ label[for="check4_8"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_9:checked ~ label[for="check1_9"],
+#check2_9:checked ~ label[for="check2_9"],
+#check3_9:checked ~ label[for="check3_9"],
+#check4_9:checked ~ label[for="check4_9"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_10:checked ~ label[for="check1_10"],
+#check2_10:checked ~ label[for="check2_10"],
+#check3_10:checked ~ label[for="check3_10"],
+#check4_10:checked ~ label[for="check4_10"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_11:checked ~ label[for="check1_11"],
+#check2_11:checked ~ label[for="check2_11"],
+#check3_11:checked ~ label[for="check3_11"],
+#check4_11:checked ~ label[for="check4_11"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+
+
+#check1_12:checked ~ label[for="check1_12"],
+#check2_12:checked ~ label[for="check2_12"],
+#check3_12:checked ~ label[for="check3_12"],
+#check4_12:checked ~ label[for="check4_12"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_13:checked ~ label[for="check1_10"],
+#check2_13:checked ~ label[for="check2_10"],
+#check3_13:checked ~ label[for="check3_10"],
+#check4_13:checked ~ label[for="check4_10"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_14:checked ~ label[for="check1_14"],
+#check2_14:checked ~ label[for="check2_14"],
+#check3_14:checked ~ label[for="check3_14"],
+#check4_14:checked ~ label[for="check4_14"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_15:checked ~ label[for="check1_15"],
+#check2_15:checked ~ label[for="check2_15"],
+#check3_15:checked ~ label[for="check3_15"],
+#check4_15:checked ~ label[for="check4_15"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_16:checked ~ label[for="check1_16"],
+#check2_16:checked ~ label[for="check2_16"],
+#check3_16:checked ~ label[for="check3_16"],
+#check4_16:checked ~ label[for="check4_16"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_17:checked ~ label[for="check1_17"],
+#check2_17:checked ~ label[for="check2_17"],
+#check3_17:checked ~ label[for="check3_17"],
+#check4_17:checked ~ label[for="check4_17"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_18:checked ~ label[for="check1_18"],
+#check2_18:checked ~ label[for="check2_18"],
+#check3_18:checked ~ label[for="check3_18"],
+#check4_18:checked ~ label[for="check4_18"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_19:checked ~ label[for="check1_19"],
+#check2_19:checked ~ label[for="check2_19"],
+#check3_19:checked ~ label[for="check3_19"],
+#check4_19:checked ~ label[for="check4_19"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+#check1_20:checked ~ label[for="check1_20"],
+#check2_20:checked ~ label[for="check2_20"],
+#check3_20:checked ~ label[for="check3_20"],
+#check4_20:checked ~ label[for="check4_20"]{
+  background: #999;
+  color: rgb(6, 243, 69);
+}
+
+.gift{
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  left: 0;
+  right: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.gift:hover{
+  background-color: #24edfc;
+color: #000000;
+}
+.label{
+  margin-top: 2px;
+
+}
+
+.flex{
+  padding: 10px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    
+    background: rgba(9, 111, 111, 0.674);
+ 
+    
+    display: none;
+}
+
+ .bo:hover .flex{
+    display: grid;
+}
+
+.label{
+  margin-bottom: 4px;
+}
+
+.label:hover{
+  background-color: #222c2c;
+}

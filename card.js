@@ -142,4 +142,315 @@ if(h == pages.length) h = 0 ;
 
 });
 
+function check(){                      
+    var company = document.querySelector(".cas"); 
+    
+    if (company.checked === true) {
+       document.querySelector(".vi").style.display = "block";
+       document.querySelector(".box").style.opacity= "0.1";
+       document.querySelector(".vi").style.opacity = "0.9";
+    }
+
+}
+
+    function none(){
+
+        document.querySelector(".vi").style.display = "none"; 
+
+        document.querySelector(".che[type = radio]").checked = true; 
+
+    }
+    
+    
+         
+    function check1(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi1").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi1").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none1(){
+
+        document.querySelector(".vi1").style.display = "none"; 
+        document.querySelector(".che1[type = radio]").checked = true; 
+
+    }
+    
+
+    function check2(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi2").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi2").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none2(){
+
+        document.querySelector(".vi2").style.display = "none"; 
+        document.querySelector(".che2[type = radio]").checked = true; 
+
+    }
+    
+
+    function check3(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi3").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi3").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none3(){
+
+        document.querySelector(".vi3").style.display = "none"; 
+        document.querySelector(".che3[type = radio]").checked = true; 
+
+
+    }
+    
+
+    function check4(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi4").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi4").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none4(){
+
+        document.querySelector(".vi4").style.display = "none"; 
+        document.querySelector(".che4[type = radio]").checked = true; 
+
+    }
+    
+
+    function check5(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi5").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi5").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none5(){
+
+        document.querySelector(".vi5").style.display = "none"; 
+        document.querySelector(".che5[type = radio]").checked = true; 
+
+    }
+    
+    function check6(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi6").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi6").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none6(){
+
+        document.querySelector(".vi6").style.display = "none"; 
+        document.querySelector(".che6[type = radio]").checked = true; 
+
+    }
+    
+
+    function check7(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi7").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi7").style.opacity = "0.9";
+        }
+    
+    }
+
+
+    function none7(){
+
+        document.querySelector(".vi7").style.display = "none"; 
+        document.querySelector(".che7[type = radio]").checked = true; 
+
+    }
+    
+    function check8(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi8").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi8").style.opacity = "0.9";
+        }
+    
+    }
+    function none8(){
+
+        document.querySelector(".vi8").style.display = "none"; 
+        document.querySelector(".che8[type = radio]").checked = true; 
+
+    }
+    
+
+
+    function check9(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi9").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi9").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none9(){
+
+        document.querySelector(".vi9").style.display = "none"; 
+        document.querySelector(".che9[type = radio]").checked = true; 
+
+    }
+    
+
+    function check10(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi10").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi10").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none10(){
+
+        document.querySelector(".vi10").style.display = "none"; 
+        document.querySelector(".che10[type = radio]").checked = true; 
+
+    }
+    
+
+
+
+    function check11(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi11").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi11").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none11(){
+
+        document.querySelector(".vi11").style.display = "none"; 
+        document.querySelector(".che11[type = radio]").checked = true; 
+
+    }
+    
+
+
+  
+    function check12(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi12").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi12").style.opacity = "0.9";
+        }
+    
+    }
+
+    function none12(){
+
+        document.querySelector(".vi13").style.display = "none"; 
+        document.querySelector(".che12[type = radio]").checked = true; 
+
+    }
+    
+    function check13(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi13").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi13").style.opacity = "0.9";
+        }
+    
+    }
+
+
+    function none13(){
+
+        document.querySelector(".vi13").style.display = "none"; 
+        document.querySelector(".che13[type = radio]").checked = true; 
+
+    }
+    
+
+    function check14(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi14").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi14").style.opacity = "0.9";
+        }
+    
+    }
+
+
+    function none14(){
+
+        document.querySelector(".vi14").style.display = "none"; 
+        document.querySelector(".che14[type = radio]").checked = true; 
+
+    }
+    
+
+
+    function check15(){                      
+        var company = document.querySelector(".cas"); 
+        
+        if (company.checked === true) {
+           document.querySelector(".vi15").style.display = "block";
+           document.querySelector(".box").style.opacity= "0.1";
+           document.querySelector(".vi15").style.opacity = "0.9";
+        }
+    
+    }
+  
+    function none15(){
+
+        document.querySelector(".vi15").style.display = "none"; 
+        document.querySelector(".che15[type = radio]").checked = true; 
+
+    }
+    
 

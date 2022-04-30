@@ -3839,7 +3839,7 @@ color: #000000;
 
 }
 
-.vi1,.vi2,.vi3, .vi4,.vi5,.vi6,.vi7,.vi8,.vi9,.vi10,.vi11,.vi12,.vi13,.vi14,.v15 {
+.vi1,.vi2,.vi3, .vi4,.vi5,.vi6,.vi7,.vi8,.vi9,.vi10,.vi11,.vi12,.vi13,.vi14,.vi15 {
   background-color: rgb(0, 0, 0);
   z-index: 2;
   position: relative;
@@ -3858,7 +3858,7 @@ color: #000000;
 .boxarrow{
 position: absolute;
 top: 40%;
-background-color: #24edfc;
+background-color: #24eefc00;
 width: 50%;
 margin-left: 40%;
 }
@@ -3867,7 +3867,7 @@ margin-left: 40%;
 position: absolute;
 height: 0;
 width: 0;
-border-right: 10px solid rgb(39, 35, 35);
+border-right: 10px solid rgb(0, 0, 0);
 border-top: 10px solid rgba(39, 35, 35, 0);
 border-bottom: 10px solid rgba(39, 35, 35, 0);
 left: -10px;
@@ -3916,7 +3916,8 @@ color: #000000;
   background-color: #24edfc;
 }
 
-.cas{
-display: none;
 
+.cas,.cas1,.cas2,.cas3,.cas4,.cas5,.cas6,.cas7,.cas8,.cas9,.cas10,.cas11,.cas12
+.cas13,.cas14,.cas15{
+  display: none;
 }

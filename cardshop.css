@@ -3921,3 +3921,9 @@ color: #000000;
 .cas13,.cas14,.cas15{
   display: none;
 }
+
+.prices{
+  font-size: 15px;
+  margin-left: -5px;
+  margin-top: 5px;
+}

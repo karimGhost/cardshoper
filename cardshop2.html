@@ -977,13 +977,13 @@ if(h >= pages.length) h = 0 ;
         
         let pages = ["cardshoper","cardshop2.html",];
   function prev(){
-        let hr = window.location.href.split('/$').pop();
+        let hr = window.location.href.split('/$');
 
         let page = hr.replace("/", '');
         
      
 
-if(page == pages.length) page = pages  ;
+if(page >= pages.length) page = pages - 1  ;
 
 
        window.location.href = page + "/" +  pages[0];

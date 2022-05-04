@@ -979,10 +979,11 @@ if(h >= pages.length) h = 0 ;
   function prev(){
         let hr = window.location.href.split('/$');
 
-        let page = hr.replace("/", pages.length - 1);
+        let page = hr.replace("/","");
         
+      let p = page.indexof(pages) - 1 ;
      
-       window.location.href = page ;
+       window.location.href = p ;
     }
     
 

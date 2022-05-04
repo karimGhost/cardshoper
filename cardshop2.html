@@ -975,11 +975,11 @@ if(h >= pages.length) h = 0 ;
         
         */
         
-        let pages = ["cardshoper","cardshop2.html",];
+        let pages = [];
   function prev(){
         let hr = window.location.href.split('/$');
 
-        let page = hr.replace("/","");
+        let page = hr.replace("/"," ");
         
      
      
@@ -993,14 +993,14 @@ if(h >= pages.length) h = 0 ;
 
         let page = hr[0].replace("/", ' ');
         
-       let h = pages.indexOf(page) - 1;
+       let h = page ;
 
-if(h == pages.length) h = 0 ;
+
 
 
        
 
-       window.location.href = h
+       window.location.href = h;
     }
     
   

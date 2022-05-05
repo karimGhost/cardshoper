@@ -985,18 +985,18 @@ let pages = ["cardshop.html","/","cards.html"];
 
 
 function next(){
-        let hr = window.location.href.split('/$').pop();
+    
+    
+       let i = window.location.href.split(/\//).pop();
 
-        let page = hr[0].replace("/", ' ');
-        
-       let h = pages.indexOf(page) + 1;
+    
+ 
 
-if(h == pages.length) h = 0 ;
-
-
-       let rdr = pages[1].replace(pages[0])
-
-       window.location.href = rdr
+ 
+  let g = window.location.href.split(i)
+    
+  
+  window.location.href = g;
     }
         
  /*   

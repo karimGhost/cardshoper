@@ -974,11 +974,11 @@ if(h >= pages.length) h = 0 ;
   }
         
         */
-        let pagess =["/", "/"];
+    
         
       function next(){
         let hr = window.location.href.split('/$');
-let page = hr.replace("/", "");
+let page = hr.replace("/", " ");
           
           let rpages = page.pop().replace("/")
           
@@ -1000,9 +1000,9 @@ if(page >=  pages.length) page = 0 ;
 
 
  
-    
+    let  r = page + "/" + pages[0];
 
-       window.location.href = page;
+       window.location.href = r;
     }
     
 

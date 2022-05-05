@@ -956,27 +956,8 @@ document.querySelector('.fon3').style.color  = 'aqua'
 
 
 
-/*
-
-function prev(){
-      let hr = window.location.href.split('/$').pop();
-
-      let page = hr[0].replace("/", '');
-      
-     let h = pages.indexOf(page);
-
-if(h >= pages.length) h = 0 ;
-
-
-     let rdr = pages[hr].replace(pages[h])
-
-     window.location.href = rdr
-  }
-        
-        */
     
         
-let pages = ["cardshop.html","/","cards.html"];
 
 
 
@@ -984,7 +965,8 @@ let pages = ["cardshop.html","/","cards.html"];
 
 
 
-function next(){
+
+function prev(){
     
     
        let i = window.location.href.split(/\//).pop();
@@ -999,28 +981,7 @@ function next(){
   window.location.href = g[0];
     }
         
- /*   
-let pages = ["cardshoper","cardshop2.html"]
-
-
-function prev(){
-        let hr = window.location.href.split('/$');
-
-        let page = hr.replace("/", "")
-        
-
-
-if(page >=  pages.length) page = 0 ;
-
-
  
-    let  r = page + "/" + pages[0];
-
-       window.location.href = r;
-    }
-    
-
-*/
 
 
 

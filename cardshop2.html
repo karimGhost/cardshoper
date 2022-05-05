@@ -989,18 +989,18 @@ if(h >= pages.length) h = 0 ;
 
 
         function next(){
-        let hr = window.location.href.split('/$').pop();
+        let hr = window.location.href.split('/$');
 
-        let page = hr.replace("/", ' ');
+        let page = hr[0].replace("/", '');
         
-       
+       let h = page ;
 
 
 
 
        
 
-       window.location.href = page;
+       window.location.href = h;
     }
     
   

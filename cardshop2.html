@@ -976,7 +976,7 @@ if(h >= pages.length) h = 0 ;
         */
     
         
-     let pages = ["cardshop.html","cardshop2.html","cards.html"];
+     let pages = ["cardshop.html","/","cards.html"];
 
 
 
@@ -989,7 +989,7 @@ function next(){
 
         let page = hr[0].replace("/", ' ');
         
-       let h = pages.indexOf(page) - 1;
+       let h = pages.indexOf(page) + 1;
 
 if(h == pages.length) h = 0 ;
 

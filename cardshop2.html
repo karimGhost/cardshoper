@@ -974,43 +974,41 @@ if(h >= pages.length) h = 0 ;
   }
         
         */
-        let pages =["/", "/"];
+        let pagess =["/", "/"];
         
       function next(){
         let hr = window.location.href.split('/$').pop();
 
         let page = hr[0].replace("/", ' ');
         
+       let h = pagess.indexOf(page) + 1;
+
+if(h == pagess.length) h = 0 ;
+
+
+       let rdr = h.replace(pagess[0])
+
+       window.location.href = rdr
+    }
+    
+let pages = ["cardshoper","cardshop2.html"]
+
+
+function prev(){
+        let hr = window.location.href.split('/$').pop();
+
+        let page = hr[0].replace("/", '');
+        
        let h = pages.indexOf(page) + 1;
 
 if(h == pages.length) h = 0 ;
 
 
-       let rdr = h.replace(pages[0])
+       let rdr = pages[1].replace(pages[0])
 
        window.location.href = rdr
     }
     
-
-
-
-function prev(){
-  
-let h = window.location.href.split('/');
-
-
-let page = h.replace("/", "");
-
-let hr = pages.indexOf(page) -1;
-
-if(hr >= pages.length) hr -1;
-
-
-let rdr = page[hr]  - page[hr];
-
-window.location.href = rdr
-
-}
 
 
 

@@ -819,11 +819,22 @@ document.querySelector('.box3').style.transition="1.3s";
 document.querySelector('.box3').style.border = "2px solid aqua";
 }
 
-function dro(){
-const url = window.location.href.replace('cardshop2.html', 'cards.html');
-url.add.attribute("target = _blank")
-  window.location.href = url
-}
+       function dro(){
+  let url = window.location.href.split(" ");
+            
+            let card = "/cards.html";
+  let v = url += card;
+    
+            
+let g = v.setAttribute("target ", "_blank")
+
+window.location.href = g;
+        
+        
+        }
+        
+        
+        
 
 function mouseO3(){
 

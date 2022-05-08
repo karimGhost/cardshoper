@@ -25,6 +25,11 @@ order.forEach(function(clic){
 pric:  contain.querySelector('input[type="radio"]:checked').value,
 
         circle: contain.querySelector('.circle'),
+        
+        
+         off: contain.querySelector(".v").style.display = "none",
+         
+         pr:  contain.querySelector('input[type="radio"]:checked').checked = false ,
          
         //cart_text: contain.querySelector('.cart_text').innerText,
         //cart_btn: contain.querySelector('.cart_button').innerText,
@@ -51,7 +56,7 @@ function disp(){
 
 
     
-      confirm(`do you want to add '${orderbtn.pric}  ${orderbtn.title}' to the cart `) ? localStorage.setItem('orderbtn',JSON.stringify(orderbtn)) + alert(`${orderbtn.pric  + " " +   orderbtn.title} successfully added to cart`) + orderbtn.circle.classList.add('dow') + orderbtn.circle.classList.add('clss') + setTimeout(disp, 2000)  : alert("card not added to cart");
+      confirm(`do you want to add '${orderbtn.pric}  ${orderbtn.title}' to the cart `) ? localStorage.setItem('orderbtn',JSON.stringify(orderbtn)) + alert(`${orderbtn.pric  + " " +   orderbtn.title} successfully added to cart`) + orderbtn.circle.classList.add('dow') + orderbtn.circle.classList.add('clss') + setTimeout(disp, 2000)  + orderbtn.off : alert("Card Is discarded !!!")  + orderbtn.pr
       
     
 

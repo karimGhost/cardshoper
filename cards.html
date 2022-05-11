@@ -431,19 +431,45 @@ border-top: none;
     <script async>
   
 
+ window.addEventListener("DOMContentLoaded", function(e){
 
-      function val(){
-let val = document.querySelector(".val").value;
+  const c = document.querySelectorAll('td[data-vi]') ;
 
-let total = document.querySelector(".item_price").innerText ;
 
-document.querySelector(".total").innerText = total * val;
+c.forEach(function(bt){
+   bt.addEventListener("click", function(e){
 
-      }
+   
+    const ev =  e.currentTarget;
 
-let j = document.querySelectorAll(".item_price");
-let k = j.length;
-document.querySelector(".b").innerHTML = "1";
+    const ve = ev.parentNode;
+ 
+let btt ={
+    val : ev.getAttribute('data-vi'),
+ tx  :   ve.querySelector(".item_price").innerText,
+ val : ve.querySelector(".io").value, 
+  tot: ve.querySelector(".total"),
+
+
+}
+
+
+
+
+  btt.tot.innerText = btt.tx *= btt.val;
+ 
+})
+
+
+
+
+
+   })
+
+
+
+})
+
 
       function openNav(){
         document.querySelector(".box-ul").style.width = "200px";

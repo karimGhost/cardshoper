@@ -281,36 +281,15 @@ border-top: none;
       <div class="col-25">
         <div class="container con1 items" >
 
-<table>
-  
-<tr>
-  <th class="p">cart</th>
-  <th>amount</th>
-  <th>price</th>
-  <th class="price"> <i class="fa fa-shopping-cart"></i></th>
-  
-</tr>
 
-<tbody class="items">
-<tr>
-  <td  class="item_detail"> </td>
-  <td><input onclick="val()" class="val" style=" width: 45px" min="1" max="100" value="1" type="number"> </td>
-  <td class="item_price"></td>
-  <td>2</td>
+<table id="table">
   
-</tr>
-</tbody>
-<tfoot>
-  <tr class="totalfoot">
-  <th style="color: black; font-weight: bold;" class="totalfoot" ><u >total</u></th>
-</tr>
 
-<tr class="foot">
-  <td style="text-align: center; color: #0ee8f7;" class="foot total"></td>
-</tr>
-</tfoot>
 
 </table>
+
+
+
           <!--
           <h4>Cart <span class="price" style="color:black"> <b class="b" ></b></span></h4>
           <p><a class="item_detail" href="#">product </a> <label><input style=" margin-left: 2em; width: 40px" min="1" max="100" value="1" type="number"></label> </a> <label for="amount"> price <span class=" item_price price">$0</span></p>
@@ -370,7 +349,7 @@ border-top: none;
 </div>
 
 
-<!-- Flickity HTML init -->
+ Flickity HTML init -->
 <!--<div  style="margin-top: -1px ;" class="container item container_main">
 
 <div class="container_left">
@@ -429,8 +408,7 @@ border-top: none;
     <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
 
     <script async>
-  
-
+ 
  window.addEventListener("DOMContentLoaded", function(e){
 
   const c = document.querySelectorAll('td[data-vi]') ;
@@ -470,6 +448,34 @@ let btt ={
 
 })
 
+
+//let u = document.querySelector(".item_price").innerText;
+
+
+
+ 
+
+
+  
+
+
+
+function vlad(){
+  let v = document.querySelector(".val").value;
+  v.forEach(function(g){
+  
+
+ let vo = document.querySelector(".total");
+vo.forEach(function(e){
+  e.innerText = g * v;
+})
+})
+}
+
+
+let j = document.querySelectorAll(".item_price");
+let k = j.length;
+document.querySelector(".b").innerHTML = "1";
 
       function openNav(){
         document.querySelector(".box-ul").style.width = "200px";

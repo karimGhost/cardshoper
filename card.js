@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", function(e){
     
     if(JSON.parse(localStorage.getItem("items")) === null){
         items.push(item)  
-    document.querySelector(".cart_count").innerText =  items.length ;
+    document.querySelector(".cart_count").innerHTML =  items.length ;
 
         window.location.reload();
     

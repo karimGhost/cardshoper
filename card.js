@@ -33,8 +33,8 @@ window.addEventListener("DOMContentLoaded", function(e){
     
     items.push(item)
                 
-                   let count = document.querySelector(".cart_count").innerHTML =  items.length;
         
+      let count = document.querySelector(".cart_count").innerHTML =  items.length ;
 
       //  localStorage.setItem("items", JSON.stringify(items))
     

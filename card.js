@@ -37,8 +37,7 @@ window.addEventListener("DOMContentLoaded", function(e){
     
          confirm(`do you want to add '${item.name}  ${item.price}' to the cart `) ? localStorage.setItem('items',JSON.stringify(items)) + alert(`${item.price  + " " +   item.name} successfully added to cart`) + item.circle.classList.add('dow') + item.circle.classList.add('clss') + setTimeout(disp, 2000)  + item.off + count  : alert("Card Is discarded !!!")  + item.pr 
 
-                let file = JSON.parse(localStorage.get("items"))
-                              let count = document.querySelector(".cart_count").innerHTML =  file.length ;
+              
 
     
     if(JSON.parse(localStorage.getItem("items")) === null){

@@ -686,9 +686,9 @@
 
     <script async>
 
-  let file = JSON.parse(localStorage.getItems("items"))
-                              let count = document.querySelector(".cart_count").innerHTML =  file.length ;
-        console.log(file.length)
+  let file = JSON.parse(localStorage.getItems("items")).length;
+                              let count = document.querySelector(".cart_count").innerHTML =  file;
+        console.log(file);
         
         function openNav(){
           document.querySelector(".box-ul").style.width = "200px";

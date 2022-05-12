@@ -43,6 +43,8 @@ function ply(){
 
 }
 
+/*
+
  let counter = 1;
 
  $('body').on("click",'.next', function() {
@@ -60,7 +62,7 @@ function ply(){
 })
 
 
-  
+  */
 
 function insta(){
   window.location.href = "http://www.instagram.com";

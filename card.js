@@ -33,14 +33,14 @@ window.addEventListener("DOMContentLoaded", function(e){
     
     items.push(item)
                 
-        
-      let count = document.querySelector(".cart_count").innerHTML =  items.length ;
+                            let count; 
+
 
       //  localStorage.setItem("items", JSON.stringify(items))
     
          confirm(`do you want to add '${item.name}  ${item.price}' to the cart `) ? localStorage.setItem('items',JSON.stringify(items)) + alert(`${item.price  + " " +   item.name} successfully added to cart`) + item.circle.classList.add('dow') + item.circle.classList.add('clss') + setTimeout(disp, 2000)  + item.off + count  : alert("Card Is discarded !!!")  + item.pr 
 
-              
+ count = document.querySelector(".cart_count").innerText =  items.length ;
 
     
     if(JSON.parse(localStorage.getItem("items")) === null){

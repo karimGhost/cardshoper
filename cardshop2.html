@@ -31,14 +31,14 @@
 <header>
 
   <ul class="ull">
-    <li  class="lis"><a class="lis active" style="cursor: pointer"; href="cardshop.html">home</a></li>
+    <li onclick = "prev()" class="lis"><a class="lis active" style="cursor: pointer"; href="cardshop.html">home</a></li>
     <li class="lis"><a class="lis" href="#bo">cards</a></li>
     <li class="lis"><a class="lis" href="/">about</a></li>
   </ul>
   
 
 <div onclick="prev()" class="img-container">
-  <a href= "cardshop.html">   <img   class="image image-head" src="mypicw.png" width="200" /></a>
+  <a onclick="prev()"href= "cardshop.html">   <img onclick="prev()"  class="image image-head" src="mypicw.png" width="200" /></a>
 </div>
 
 
@@ -973,20 +973,20 @@ let g = v.setAttribute("target", "_blank")
 
 
 
-function prev(){
     
     
-       let i = window.location.href.split(/\//).pop();
+       function prev(){
+let prev = window.location.href;
+    let i = prev;
 
-    
- 
+ let g = i.split("\/").pop()
 
+
+ let v  = i.replace(g, "goo")
  
-  let g = window.location.href.split(i)
+window.location.href = v;
+}
     
-  
-  window.location.href = g[0];
-    }
         
  
 

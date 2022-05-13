@@ -33,7 +33,7 @@
   <ul class="ull">
     <li  onclick="prev()" class="lis"><a class="lis active" style="cursor: pointer";  onclick="prev()"  href="">home</a></li>
     <li class="lis"><a class="lis" href="#bo">cards</a></li>
-    <li onclick="abt()"class="lis"><a class="lis" onclick="abt()">about</a></li>
+    <li onclick="abt()" class="lis"><a class="lis" onclick="abt()">about</a></li>
   </ul>
   
 
@@ -1000,10 +1000,7 @@ window.location.href = rdr
 let prev = window.location.href;
     let i = prev;
 
- let g = i.split("\/").pop()
-
-
- let v  = i.replace(g, "about.html")
+ let g = i.split("\/").push("about.html")
  
 window.location.href = v;
 }

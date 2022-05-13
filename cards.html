@@ -192,7 +192,7 @@ border-top: none;
         
       
       <div onclick="prev()" class="img-container">
-        <a href= "cardshop.html">   <img   class="image image-head" src="mypicw.png" width="200" /></a>
+        <a href=  onclick="prev()" "cardshop.html">   <img   class="image image-head" src="mypicw.png" width="200" /></a>
       </div>
       
       
@@ -766,22 +766,16 @@ if(h == pages.length) h = 0 ;
 
 
 
-function prev(){
+       function prev(){
+let prev = window.location.href;
+    let i = prev;
 
-let h = window.location.href.split('/');
-
-
-let page = h.replace("/", "");
-
-let hr = pages.indexOf(page) -1;
-
-if(hr >= pages.length) hr -1;
+ let g = i.split("\/").pop()
 
 
-let rdr = page[hr]  - page[hr];
-
-window.location.href = rdr
-
+ let v  = i.replace(g, " ")
+ 
+window.location.href = v;
 }
 
 

@@ -32,8 +32,8 @@
 
   <ul class="ull">
     <li  onclick="prev()" class="lis"><a class="lis active" style="cursor: pointer";  onclick="prev()"  href="">home</a></li>
-    <li class="lis"><a class="lis" href="#bo">cards</a></li>
-    <li onclick="abt()" class="lis"><a class="lis" onclick="abt()">about</a></li>
+    <li class="lis" #card ><a class="lis" #card >cards</a></li>
+    <li  class="lis"><a class="lis" onclick="abt()">about</a></li>
   </ul>
   
 
@@ -53,7 +53,7 @@
   <!--<a href="javascript:void(0)" class="close absolute" onclick="closeNav()">&times;</a> -->
 
         <li onclick="prev()" onmouseover="on()"  onmouseout="off()" class="f"><a onclick="prev()" class="link" ><i class="fon fon1 fa fa-home"><p class="font font1">Home</p></i></a></li>
-        <li  onmouseover="on2()" onclick="abt()"  onmouseout="off2()"  class="f"><a onclick="abt()" class="link"><i class=" fon fon2 fa fa-info-circle"><p onclick="abt()"  class="font font2">About</p></i></a></li>
+        <li  onmouseover="on2()" onclick="abt()"  onmouseout="off2()"  class="f"><a  class="link"><i class=" fon fon2 fa fa-info-circle"><p   class="font font2">About</p></i></a></li>
         <li #card onmouseover="on3()"   onmouseout="off3()" class="f"><a class="link" #card><i class="fon fon3 	fa fa-square-o"><p class="font  font3">Cards</p></i></a></li>
         
     </ul>
@@ -995,15 +995,7 @@ window.location.href = rdr
 
 }
 */
-        
-              function abt(){
-let prev = window.location.href;
-    let i = prev;
 
- let g = i.split("\/").push("about.html")
- 
-window.location.href = v;
-}
 
       
   
@@ -1012,7 +1004,7 @@ window.location.href = v;
          window.location.reload();   
         }
         
-     funcion dro(){   
+     function abt(){   
         let i = window.location.href;
 
  let g = i.split("\/");

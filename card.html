@@ -38,7 +38,7 @@
 <header>
 
   <ul class="ull">
-    <li  onclick="pre()" class="lis"><a onclick="prev()" class="lis active" style="cursor: pointer"; >home</a></li>
+    <li  onclick="pre()" class="lis"><a  class="lis active" style="cursor: pointer"; >home</a></li>
     <li  onclick="card()" class="lis"><a style="color:aqua"; class="lis" >cards</a></li>
     <li onclick="abt()" class="lis"><a class="lis " href="about.html">about</a></li>
   </ul>
@@ -59,7 +59,7 @@
     <ul class="box-ul" style="margin-left:-8px">
   <!--<a href="javascript:void(0)" class="close absolute" onclick="closeNav()">&times;</a> -->
 
-        <li  onclick="pre()" onmouseover="on()"  onmouseout="off()" class="f"><a class="link" ><i style="color: aqua"; class="fon fon1 fa fa-home"><p style="color:aqua "; class="font font1" onclick="prev()" >Home</p></i></a></li>
+        <li  onclick="pre()" onmouseover="on()"  onmouseout="off()" class="f"><a class="link" ><i style="color: aqua"; class="fon fon1 fa fa-home"><p style="color:aqua "; class="font font1"  >Home</p></i></a></li>
         <li onclick="abt"  onmouseover="on2()"  onmouseout="off2()"  class="f"><a class="link" href="about.html"><i class=" fon fon2 fa fa-info-circle"><p class="font font2">About</p></i></a></li>
         <li onclick="card()" style="color:rgb(10, 10, 9) "; class="f"><a class="link" ><i style="color:rgb(7, 10, 10) "; class="fon fon3 	fa fa-square-o"><p style="color:rgb(4, 16, 16)" class="font  font3">Cards</p></i></a></li>
         
@@ -1098,7 +1098,8 @@
 
 
        function pre(){
-        let v = window.location.href
+        let v = window.location.href;
+           
         let g  = v.split("\/").pop();
         
        let c =   v.replace(g," ");
@@ -1319,26 +1320,7 @@ document.querySelector('.box10').style.border = "2px solid aqua";
 }
 
 
-function mouseO8(){
 
-document.querySelector('.ci8').style.border= "2px solid aqua";
-document.querySelector('.ci8').style.transition="1.3s";
-document.querySelector('.li8').style.border= "2px solid aqua";
-document.querySelector('.li8').style.transition="1.1s";
-document.querySelector('.box9').style.transition="1.3s";
-document.querySelector('.box9').style.border = "2px solid aqua";
-}
-
-
-function mouseO9(){
-
-document.querySelector('.ci9').style.border= "2px solid aqua";
-document.querySelector('.ci9').style.transition="1.3s";
-document.querySelector('.li9').style.border= "2px solid aqua";
-document.querySelector('.li9').style.transition="1.1s";
-document.querySelector('.box10').style.transition="1.3s";
-document.querySelector('.box10').style.border = "2px solid aqua";
-}
 
 function mouse10(){
 

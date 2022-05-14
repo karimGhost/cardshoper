@@ -32,8 +32,8 @@
 
   <ul class="ull">
     <li onclick = "prev()" class="lis"><a onclick="prev()" class="lis active" style="cursor: pointer"; >home</a></li>
-    <li class="lis"><a class="lis" href="#bo">cards</a></li>
-    <li class="lis"><a class="lis" href="/">about</a></li>
+    <li class="lis" #card ><a class="lis" >cards</a></li>
+    <li  onclick = "abt()" class="lis"><a class="lis" >about</a></li>
   </ul>
   
 
@@ -53,8 +53,8 @@
   <!--<a href="javascript:void(0)" class="close absolute" onclick="closeNav()">&times;</a> -->
 
         <li onclick="prev()" onmouseover="on()"  onmouseout="off()" class="f"><a onclick="prev()" class="link" href=""><i class="fon fon1 fa fa-home"><p class="font font1">Home</p></i></a></li>
-        <li  onmouseover="on2()"  onmouseout="off2()"  class="f"><a class="link" href="/"><i class=" fon fon2 fa fa-info-circle"><p class="font font2">About</p></i></a></li>
-        <li onmouseover="on3()"   onmouseout="off3()" class="f"><a class="link" href="#card"><i class="fon fon3 	fa fa-square-o"><p class="font  font3">Cards</p></i></a></li>
+        <li  onclick="abt()" onmouseover="on2()"  onmouseout="off2()"  class="f"><a class="link" ><i class=" fon fon2 fa fa-info-circle"><p class="font font2">About</p></i></a></li>
+        <li onmouseover="on3()"   onmouseout="off3()" class="f"><a class="link" #cards><i class="fon fon3 	fa fa-square-o"><p class="font  font3">Cards</p></i></a></li>
         
     </ul>
 

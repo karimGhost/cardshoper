@@ -33,7 +33,7 @@
   <ul class="ull">
     <li  onclick="prev()" class="lis"><a class="lis active" style="cursor: pointer";  onclick="prev()"  href="">home</a></li>
     <li class="lis" onclick="card()" ><a class="lis"  >cards</a></li>
-    <li  class="lis"><a class="lis" onclick="abt()">about</a></li>
+    <li onclick ="abt()" class="lis"><a class="lis" onclick="abt()">about</a></li>
   </ul>
   
 
@@ -997,21 +997,14 @@ window.location.href = rdr
 */
 
 
-      function prev(){
-  
-        
-     let i = window.location.href;
-
- let g = i.split("\/").pop();
-
-              let b = i.replace(g, " ")
+     function prev(){
 
 
-          window.location.href = b;
-        
-        
-        
-        }
+
+
+         window.location.href.reload();
+
+       }
  
            function dro(){   
         let i = window.location.href;
@@ -1139,7 +1132,7 @@ function dropdown(){
 
  let g = i.split("\/").pop();
 
-              let b = i.replace(g, "about.html")
+              let b = g +=  "about.html"
 
 
           window.location.href = b;   
@@ -1147,7 +1140,19 @@ function dropdown(){
 
 function card(){
     
-  window.location.href.reload();
+
+
+
+    let i = window.location.href;
+
+let g = i.split("\/").pop();
+
+             let b = g += "card.html";
+
+
+         window.location.href = b;
+
+       
     
 }
 

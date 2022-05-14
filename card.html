@@ -1097,7 +1097,18 @@
     <script async>
 
 
-
+       function prev(){
+        let v = window.location.href;
+        
+        let g = v.split("\/").pop();
+        
+       let c =   v.replace(g, " ");
+   
+        
+        
+            
+            window.location.href = c;
+        }
 
 
 
@@ -1233,11 +1244,7 @@ document.querySelector('.box3').style.transition="1.3s";
 document.querySelector('.box3').style.border = "2px solid aqua";
 }
 
-function dro(){
-  const url = window.location.href.replace('cardshop.html', 'cards.html');
 
-    window.location.href = url
-}
 
 function mouseO3(){
 
@@ -1586,19 +1593,14 @@ function dropdown(){
 
 }
         
+        function dro(){
+  const url = window.location.href.replace('cardshop.html', 'cards.html');
+
+    window.location.href = url
+}
+     
         
-        function prev(){
-        let v = window.location.href;
-        
-        let g = v.split("\/").pop();
-        
-       let c =   v.replace(g, " ");
    
-        
-        
-            
-            window.location.href = c;
-        }
         
 
 

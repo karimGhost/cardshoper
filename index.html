@@ -997,22 +997,21 @@ window.location.href = rdr
 */
 
 
-      
+      function prev(){
   
-        function prev(){
-            
-         window.location.reload();   
-        }
         
-     function abt(){   
-        let i = window.location.href;
+     let i = window.location.href;
 
- let g = i.split("\/");
+ let g = i.split("\/").pop();
 
- let  b = i += "about.html";
+              let b = i.replace(g, " ")
+
 
           window.location.href = b;
-}
+        
+        
+        
+        }
  
            function dro(){   
         let i = window.location.href;
@@ -1039,11 +1038,6 @@ let g = v.setAttribute("target", "_blank")
 
 
 
-function card(){
-     
-
-    window.location.href = "cards.html";
-  }
 
         
         
@@ -1136,17 +1130,24 @@ function dropdown(){
 
 
 }
+        
+        
+        function abt(){
+            
+            
+            let i = window.location.href;
+
+ let g = i.split("\/").pop();
+
+              let b = i.replace(g, "about.html")
+
+
+          window.location.href = b;   
+        }
 
 function card(){
     
-           
-        let i = window.location.href;
-
- let g = i.split("\/");
-
- let  b = i += "card.html";
-
-          window.location.href = b;
+  window.location.href.reload();
     
 }
 

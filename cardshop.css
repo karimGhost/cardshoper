@@ -3438,30 +3438,49 @@ font-weight:100;
 }
 
  .location:hover{
- 
+
 color: rgb(228, 10, 83)
 }
 
 .twitter:hover{
 
-background-image: linear-gradient(to bottom, rgb(231, 245, 247), rgb(245, 244, 247));
 border-radius: 5px;
 color: rgb(0, 172, 238);
+}
+
+.twitt:hover{
+background-image: linear-gradient(to bottom, rgb(231, 245, 247), rgb(245, 244, 247));
+
 }
 
 .insta:hover{
 background-image: linear-gradient(to bottom left, rgb(64, 93, 230), rgb(88, 81, 219),rgb(131, 58, 180),rgb(193, 53, 132),rgb(225, 48, 108), rgb(253, 29, 29),rgb(245, 96, 64),rgb(247, 119, 55),rgb(252, 175, 69),rgb(255, 220, 128));
 border-radius: 5px;
+color: white;
 }
 
+.inst:hover{
+  color:rgb(225, 48, 108);
+  
+
+  }
+
 .quora:hover{
-  background-image: linear-gradient(to bottom, rgb(185, 43, 39), rgb(185, 43, 39));
-  border-radius: 5px;
+background-image: linear-gradient(to bottom, rgb(185, 43, 39), rgb(185, 43, 39));
+border-radius: 5px;
+color: white;
+}
+
+.quo:hover{
+  color: rgb(185, 43, 39);
+
 }
 
 .git:hover{
-  color: black;
+color: black;
 }
+
+
 
 
 

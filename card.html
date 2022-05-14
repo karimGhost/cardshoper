@@ -1098,16 +1098,12 @@
 
 
        function pre(){
-        let v = window.location.href;
+        let v = window.location.href
+        let g  = v.split("\/").pop();
         
-        let g = v.split("\/").pop();
-        
-       let c =   v.replace(g, " ");
+       let c =   v.replace(g," ");
    
-        
-        
-            
-            window.location.href = c;
+           window.location.href = c;
         }
 
 

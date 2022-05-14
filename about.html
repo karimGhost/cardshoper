@@ -273,7 +273,28 @@ Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack yo
    </div>
 
 
-
+<script>
+    function prev(){
+        let v = window.location.href;
+        
+        let g = v.split("\/").pop();
+        
+       let c =   v.replace(g, " ");
+        
+        let i = c.split("\/").pop();
+        
+        if(i == "carshoper/"){
+                    window.location.href = c;
+        }else if(i == "cardshop2.html"){
+            
+       let x = v.replace(i, " ");
+            
+            window.location.href = x;
+        }
+        
+    }
+    
+    </script>
 
 </body>
 </html>

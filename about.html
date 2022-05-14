@@ -221,7 +221,7 @@ box-sizing: content-box;
         <div class="container_big">
             <div  class="big_h1 ">
 <h1 class="head1">About Cardshoper</h1>
-<p onclick="prev()" class="left"> <a  onclick="prev()">Home </a></p>
+<p onclick="prev()" class="left"> <a  >Home </a></p>
 
 
 </div>
@@ -280,16 +280,11 @@ Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack yo
         let g = v.split("\/").pop();
         
        let c =   v.replace(g, " ");
+   
         
-        let i = c.split("\/").pop();
         
-        if(i == "carshoper/"){
-                    window.location.href = c;
-        }else if(i == "cardshop2.html"){
             
-       let x = v.replace(i, " ");
-            
-            window.location.href = x;
+            window.location.href = c;
         }
         
     }

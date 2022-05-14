@@ -32,7 +32,7 @@
 
   <ul class="ull">
     <li  onclick="prev()" class="lis"><a class="lis active" style="cursor: pointer";  onclick="prev()"  href="">home</a></li>
-    <li class="lis" #card ><a class="lis" #card >cards</a></li>
+    <li class="lis" onclick="card()" ><a class="lis"  >cards</a></li>
     <li  class="lis"><a class="lis" onclick="abt()">about</a></li>
   </ul>
   
@@ -54,7 +54,7 @@
 
         <li onclick="prev()" onmouseover="on()"  onmouseout="off()" class="f"><a onclick="prev()" class="link" ><i class="fon fon1 fa fa-home"><p class="font font1">Home</p></i></a></li>
         <li  onmouseover="on2()" onclick="abt()"  onmouseout="off2()"  class="f"><a  class="link"><i class=" fon fon2 fa fa-info-circle"><p   class="font font2">About</p></i></a></li>
-        <li #card onmouseover="on3()"   onmouseout="off3()" class="f"><a class="link" #card><i class="fon fon3 	fa fa-square-o"><p class="font  font3">Cards</p></i></a></li>
+        <li onclick="card()"onmouseover="on3()"   onmouseout="off3()" class="f"><a class="link" ><i class="fon fon3 	fa fa-square-o"><p class="font  font3">Cards</p></i></a></li>
         
     </ul>
 
@@ -1137,7 +1137,18 @@ function dropdown(){
 
 }
 
+function card(){
+    
+           
+        let i = window.location.href;
 
+ let g = i.split("\/");
+
+ let  b = i += "card.html";
+
+          window.location.href = b;
+    
+}
 
 
 

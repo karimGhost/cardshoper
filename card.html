@@ -54,7 +54,7 @@
 
 <div class="box">
  
-  <a href="javascript:void(0)" class="bod cls" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="bod cls" onclick="closeNa()">&times;</a>
 
     <ul class="box-ul" style="margin-left:-8px">
   <!--<a href="javascript:void(0)" class="close absolute" onclick="closeNav()">&times;</a> -->
@@ -65,8 +65,8 @@
         
     </ul>
 
-<span class="open opn" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776</span>
-<a href="javascript:void(0)" id="cls" class="clos cls" onclick="closeNav()">&times;</a>
+<span class="open opn" style="font-size:30px;cursor:pointer;" onclick="opnNav()">&#9776</span>
+<a href="javascript:void(0)" id="cls" class="clos cls" onclick="closeNa()">&times;</a>
 
 </div>
 
@@ -1109,7 +1109,7 @@
 
 
 
-        function openNav(){
+        function opnNav(){
           document.querySelector(".box-ul").style.width = "200px";
        
           document.querySelector(".box-ul").style.zIndex = "3";
@@ -1171,7 +1171,7 @@ e =   document.querySelector(".box-ul").style.width = "0px";
 
 
 
-        function closeNav(){
+        function closeNa(){
 
           
             document.querySelector(".box-ul").style.width = "0";

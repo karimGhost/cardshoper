@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", function(e){
     
     }else{
         const locale = JSON.parse(localStorage.getItem("items"));
-        no += 1
+        locale.no += 1
     
     
     }
